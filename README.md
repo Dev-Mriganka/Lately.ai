@@ -10,4 +10,7 @@ Unit-3 project - https://app.lately.ai/
 
 - 📫 Tushar Tyagi **Log In + Register + Payment**
 
-- ⚡ Sateesh Vepada **Product Page**
+- 👑 Sateesh Vepada **Product Page**
+
+- ⚡ Anubhav Varshney **Manager**
+
