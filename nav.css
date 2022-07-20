@@ -1,0 +1,164 @@
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+:root {
+   --dark-green: #174C43;
+   --light-green: #01C66A;
+}
+
+a{
+   text-decoration: none;
+   color: inherit;
+}
+li{
+   list-style-type: none;
+}
+body{
+   font-family: 'Noto Sans', sans-serif;
+}
+
+#top-add{
+   color: white;
+   background-color: #3E6B97;
+   text-align: center;
+   font-weight: 600;
+}
+
+.max-width-container{   
+   margin: auto;
+   max-width: 1060px;
+}
+
+#top-add p{
+   padding: 10px;
+}
+
+#top-add a{
+   text-decoration: underline;
+}
+
+
+
+
+
+.menupartners{
+   font-size: 14px;
+   font-weight: 600;
+   color: #00884a;
+}
+
+.navbar{
+   background: #fff;
+   padding: 0 1rem;
+   /* position: fixed; */
+   display: flex;
+   flex-direction: column;
+   z-index: 10;
+   max-width: 100hh;
+}
+
+.menu-link{
+   color: var(--dark-green);
+   font-weight: 600;
+   font-size: 15px;
+}
+
+.navbar-brand{
+   display: flex;
+   justify-content: space-between;
+   padding: 1rem 0;
+   border-bottom: 1px solid #ddd;
+   align-items: center;
+}
+
+.menu-mob {
+   display: none;
+   border-radius: 50%;
+   background-color: #00c66b;
+   color: rgb(255, 255, 255);
+}
+
+.menu-title{
+   font-weight: 600;
+}
+.w-nav-button {
+   position: relative;
+   float: right;
+   padding: 20px 23px;
+   font-size: 15px;
+   /* display: none; */
+   cursor: pointer;
+   user-select: none;
+}
+.navbar-collapse{
+   
+   display: none;
+}
+
+.navbar-collapse.open {
+   display: block;
+}
+.navbar-nav{
+   position: relative;
+}
+
+.navbar-nav>li>a{
+   color: var(--dark-green);
+   font-size: 0.9rem;
+   font-weight: 700;
+   display: block;
+   padding: 20px 40px 20px 20px;
+}
+.navbar-nav>li>a:hover {
+   color:var(--light-green)
+}
+.drop-icon{
+   position: absolute;
+   right:10px;
+   font-size: 0.9rem !important;
+}
+
+.nav-dropdown-subhead{
+   
+}
+.dropdown-list-3{
+   display: none;
+}
+.dropdown-list-3.w--open{
+   display: block;
+}
+
+.dropdown-link-mobile {
+   display: flex;
+   width: 100%;
+   padding: 15px 22px;
+   font-size: 14px;
+   color: #174c36;
+   text-decoration: none;
+}
+
+.nav-content-wrap {
+   display: flex;
+   width: 100%;
+   padding-left: 20px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+}
+
+
+
+@media all and (min-width: 480px) and (max-width: 991px) {
+   .menu-mob {
+         display: block;
+   }
+}
+
+@media all and (min-width: 0px) and (max-width: 479px) {
+   .menu-mob {
+         display: block;
+      }
+}
