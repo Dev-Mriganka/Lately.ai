@@ -1,0 +1,690 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #overview{
+            background-color: #174C43;
+            color: white;
+            height: 400px;
+            border: 1px solid red;
+        }
+        #overview>h3{
+            color:#00C66B;
+            padding-top: 30px;
+            margin-left: 15%;
+            font-size: 17px;
+        }
+        #overview h1{
+            width:50%;
+            margin-left: 200px;
+            font-size: 44px;
+        }
+        #overview div{
+            font-size: 22px;
+            width:41%;
+            margin-left: 15%;
+            padding-bottom: 25px;
+        }
+        #overview a{
+            padding:9px 25px;
+            border:3px solid #00C66B;
+            color: white;
+            font-size: 15px;
+            margin-left: 15%;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            
+        }
+        #overview a:hover{
+            background-color: #00C66B;
+        }
+        #content_platform{
+            display: flex;
+            background-color: #E6F6EF;
+        }
+        #content_platform img{
+            height:300px;
+            width:520px;
+            padding: 55px;
+            margin-left: 15%;
+        }
+        #content_platform h2{
+            font-size: 32px;
+            width:70%;
+            margin-left: 50px;
+            padding-top: 55px;
+        }
+        #content_platform p{
+            font-size: 18px;
+            color:#5F5F5F;
+            width:70%;
+            margin-left: 50px;
+            
+        }
+        #content_writing{
+            display: flex;
+            padding-top: 55px;
+            padding-bottom:55px;
+        }
+        #content_writing h2{
+            color:#133D36;
+            font-size: 32px;
+            margin-left: 25%;
+        }
+        #content_writing p{
+            width:65%;
+            color:#5F5F5F;
+            font-size: 18px;
+            margin-left: 25%;
+            
+        }
+        #content_writing a{
+            color:#00C66B;
+            padding:9px 25px;
+            margin-left: 25%;
+            border:3px solid #00C66B;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+
+        }
+        #content_writing a:hover{
+            background-color:#00C66B;
+            color:white;
+        }
+        
+        #content_writing img{
+            height:250px;
+            width:510px;
+            margin-right: 150px;
+        }
+        #feeding{
+            display: flex;
+        }
+        #feeding img{
+            height:370px;
+            width:520px;
+            padding: 55px;
+            margin-left: 15%;;
+        }
+        #feeding h2{
+            font-size: 32px;
+            width:70%;
+            margin-left: 50px;
+            padding-top: 55px;
+        }
+        #feeding p{
+            font-size: 18px;
+            color:#5F5F5F;
+            width:60%;
+            margin-left: 50px;
+        }
+        #feeding a{
+            color:#00C66B;
+            padding:9px 25px;
+            border:3px solid #00C66B;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-left: 50px;
+        }
+        #feeding a:hover{
+            color:white;
+            background-color: #00C66B;
+        }
+        #gold{
+            display: flex;
+            padding-top: 55px;
+            padding-bottom:55px;
+        }
+        #gold h2{
+            color:#133D36;
+            font-size: 32px;
+            margin-left: 25%;
+        }
+        #gold p{
+            width:65%;
+            color:#5F5F5F;
+            font-size: 18px;
+            margin-left: 25%;
+            
+        }
+        #gold a{
+            color:#00C66B;
+            padding:9px 25px;
+            margin-left: 25%;
+            border:3px solid #00C66B;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+
+        }
+        #gold a:hover{
+            background-color:#00C66B;
+            color:white;
+        }
+        
+        #gold img{
+            height:412px;
+            width:560px;
+            margin-right: 150px;
+        }
+        #marketing{
+            display: flex;
+        }
+        #marketing img{
+            height:370px;
+            width:520px;
+            padding: 55px;
+            margin-left: 15%;;
+        }
+        #marketing h2{
+            font-size: 32px;
+            width:70%;
+            margin-left: 50px;
+            padding-top: 55px;
+        }
+        #marketing p{
+            font-size: 18px;
+            color:#5F5F5F;
+            width:60%;
+            margin-left: 50px;
+        }
+        #marketing a{
+            color:#00C66B;
+            padding:9px 25px;
+            border:3px solid #00C66B;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-left: 50px;
+        }
+        #marketing a:hover{
+            color:white;
+            background-color: #00C66B;
+        }
+        #social_selling{
+            display: flex;
+            padding-top: 55px;
+            padding-bottom:55px;
+        }
+        #social_selling h2{
+            color:#133D36;
+            font-size: 32px;
+            margin-left: 25%;
+        }
+        #social_selling p{
+            width:65%;
+            color:#5F5F5F;
+            font-size: 18px;
+            margin-left: 25%;
+            
+        }
+        #social_selling a{
+            color:#00C66B;
+            padding:9px 25px;
+            margin-left: 25%;
+            border:3px solid #00C66B;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+
+        }
+        #social_selling a:hover{
+            background-color:#00C66B;
+            color:white;
+        }
+        
+        #social_selling img{
+            height:412px;
+            width:560px;
+            margin-right: 150px;
+        }
+        #analytics{
+            display: flex;
+        }
+        #analytics img{
+            height:370px;
+            width:520px;
+            padding: 55px;
+            margin-left: 15%;;
+        }
+        #analytics h2{
+            font-size: 32px;
+            width:70%;
+            margin-left: 50px;
+            padding-top: 55px;
+        }
+        #analytics p{
+            font-size: 18px;
+            color:#5F5F5F;
+            width:60%;
+            margin-left: 50px;
+        }
+        #analytics a{
+            color:#00C66B;
+            padding:9px 25px;
+            border:3px solid #00C66B;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-left: 50px;
+        }
+        #analytics a:hover{
+            color:white;
+            background-color: #00C66B;
+        }
+        #tag{
+            display: flex;
+            margin: auto;
+            height:34px;
+            width:300px;
+        }
+        #artificail{
+            display: flex;
+            /* border:1px solid red; */
+            /* width:90%; */
+            margin: auto;
+            margin-top: 150px;
+            background-color: #E6F6EF;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        #artificail img{
+            height:171px;
+            width:171px;
+        }
+        #artificail h2{
+            font-size: 32px;
+           
+            margin-left: 8%;
+        }
+        #artificail p{
+            font-size: 18px;
+            color:#5F5F5F;
+            width:60%;
+            margin-left: 20%;
+            margin-bottom: 20%;
+        }
+        #artificail a{
+            color:#00C66B;
+            padding:9px 25px;
+            border:3px solid #00C66B;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            
+        }
+        #artificail>div{
+            /* border:1px solid red; */
+            margin-right: 60px;
+            width:33%;
+            
+        }
+        #artificail a:hover{
+            color:white;
+            background-color: #00C66B;
+        }
+        #quotation img{
+            width:85px;
+            height:85px;
+            margin-top: -40px;
+            margin-left: 80px;
+        }
+        #bottom{
+            /* width:90%; */
+            height:auto;
+            margin: auto;
+            margin-top: -45px;
+            /* border:1px solid red; */
+            background-color: #174C43;
+            padding-bottom: 50px;
+            
+        }
+        #quote{
+            padding-top: 100px;
+            width:60%;
+            color:white;
+            font-size: 24px;
+            margin: auto;
+        }
+        #logo{
+            display: flex;
+            margin: auto;
+            margin-left: 280px;
+            margin-top: 50px;
+            color:white;
+        }
+        #logo h2{
+            margin-left: 20px;
+        }
+        #logo p{
+            margin-left: 20px;
+        }
+        #profile{
+            height: 120px;
+            width:120px;
+            border-radius: 100%;
+        }
+        #sap{
+            width:133px;
+            height:65px;
+            margin-left: 20px;
+        }
+        #info{
+            margin:auto;
+            text-align: center;
+        }
+        #info>h2{
+            font-size: 32px;
+            width:65%;
+            margin-left: 20%;
+        }
+        #final{
+            display: flex;
+            text-align: center;
+            width:80%;
+            margin:auto;
+           
+
+        }
+        #final img{
+            height:50px;
+            width:50px;
+
+        }
+        #final>div{
+            /* border:1px solid red; */
+            margin: auto;
+            width:33%;
+        }
+        .percent{
+            font-size:65px ;
+            color:#24AAE1;
+        }
+        .title{
+            color: #24AAE1;
+            font-size: 29px;
+            text-decoration: underline;
+            padding: 0px opx 4px;
+
+        }
+        .caption{
+            color: #5f5f5f;
+            font-size: 16px;
+            margin-left: -200px;
+            margin-top: 20px;
+            padding:0px 170px;
+            width:100%;
+        }
+        #midgreen{
+            color:#00C66B;
+        }
+        #tgreen{
+            color:#00C66B;
+        }
+        #cap{
+            width: 50%;
+            margin-left: 100px;
+        }
+        #middiv{
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        @media all and (min-width:320px) and (max-width:768px){
+
+                #content_platform{
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 100px;
+            }
+            #overview h1{
+                width:50%;
+                margin-left: 100px;
+                font-size: 44px;
+            }
+            #overview{
+                height:auto;
+                padding-bottom: 20px;
+            }
+            #content_platform img{
+                margin-left: 0px;
+            }
+            #content_writing{
+                display: flex;
+                flex-direction: column;
+            }
+            #content_writing h2{
+                margin-left: 0px;
+            }
+            #content_writing p{
+                margin-left: 0px;
+            }
+            #content_writing a{
+                margin-left: 0px;
+            }
+            #feeding img{
+                margin-left: 0px;
+            }
+            #feeding{
+                display: flex;
+                flex-direction: column;
+            }
+            #feeding h2{
+                margin-left: 0px;
+            }
+            #feeding p{
+                margin-left: 0px;
+            }
+            #feeding a{
+                margin-left: 0px;
+            }
+            #gold img{
+                margin-left: 0px;
+                margin-top: 10px;
+            }
+            #gold{
+                display: flex;
+                flex-direction: column;
+            }
+            #gold h2{
+                margin-left: 0px;
+            }
+            #gold p{
+                margin-left: 0px;
+            }
+            #gold a{
+                margin-left: 0px;
+            }
+            #marketing img{
+                margin-left: 0px;
+                margin-top: 10px;
+            }
+            #marketing{
+                display: flex;
+                flex-direction: column;
+            }
+            #golmarketingd h2{
+                margin-left: 0px;
+            }
+            #marketing p{
+                margin-left: 0px;
+            }
+            #marketing a{
+                margin-left: 0px;
+            }
+            #social_selling img{
+                margin-left: 0px;
+                margin-top: 10px;
+            }
+            #social_selling{
+                display: flex;
+                flex-direction: column;
+            }
+            #social_selling h2{
+                margin-left: 0px;
+            }
+            #social_selling p{
+                margin-left: 0px;
+            }
+            #social_selling a{
+                margin-left: 0px;
+            }
+            #analytics img{
+                margin-left: 0px;
+                margin-top: 10px;
+            }
+            #analytics{
+                display: flex;
+                flex-direction: column;
+            }
+            #analytics h2{
+                margin-left: 0px;
+            }
+            #analytics p{
+                margin-left: 0px;
+            }
+            #analytics a{
+                margin-left: 0px;
+            }
+            #logo{
+                margin-left: 50px;
+            }
+            #final{
+                display: flex;
+                flex-direction: column;
+
+            }
+            #final>div{
+                width:100%;
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="overview">
+        <h3>PRODUCT OVERVIEW</h3>
+        <h1>Take the Guesswork Out of What to Say on Social Media</h1>
+        <div>Lately’s all-in-one solution uses A.I. to generate the most effective content for scaling your social media marketing and social selling programs.</div>
+        <a href="#">TRY FOR FREE</a>
+    </div>
+    <div id="content_platform">
+        <div>
+            <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fe8f07f305f86dca9eb1d69_lately_product_wheel-01.svg" alt="">
+        </div>
+        <div>
+            <h2>The Lately Social A.I. Management Content Platform</h2>
+            <p>In addition to a full-service platform of scheduling, analytics and enterprise-wide syndication features, Lately's artificial intelligence generates dozens and even hundreds of custom, pre-tested social posts automatically.</p>
+        </div>
+    </div>
+    <div id="content_writing">
+        <div>
+            <h2>A.I. Content Writing - How it Works</h2>
+            <p>First, Lately studies what words and phrases best resonate with your target audience by analyzing the social channels you connect to our platform. We then build a writing model based on what we learn and apply this writing model to each piece of longform content that you feed the A.I. brain. </p>
+            <a href="#">LEARN MORE</a>
+        </div>
+        <div><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd7a906e969ea8c00a347d8_home-bowtie-content-to-gold.png" alt=""></div>
+    </div>
+    <div id="feeding">
+        <div>
+            <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fe29a7d50a96f863c3cb607_SocialMediaMarketing-01.svg" alt="">
+        </div>
+        <div>
+            <h2>Feeding the Lately A.I. Brain</h2>
+            <p>Upload longform content files like blogs, webpages, news articles, white papers, newsletters or any kind of text imaginable. You can also upload audio and video like podcasts, workshops, conference panels, keynotes and more. We'll then automatically transcribe your audio and video files for the brain to ingest.</p>
+            <a href="#">LEARN MORE</a>
+        </div>
+    </div>
+    <div id="gold">
+        <div>
+            <h2>Unlock the Gold</h2>
+            <p>In minutes, Lately transforms your longform content into dozens or even hundreds of quotes that our A.I. knows will get you the highest engagement. Users have the opportunity to edit and enhance all quotes, which, in the case of video files, include the matching video clips of the speakers voicing the text of each quote. </p>
+            <a href="#">LEARN MORE</a>
+        </div>
+        <div><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fe29c07bcae60a0f0063646_SocialSelling-01.svg" alt=""></div>
+    </div>
+    <div id="marketing">
+        <div>
+            <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fe29a7d50a96f863c3cb607_SocialMediaMarketing-01.svg" alt="">
+        </div>
+        <div>
+            <h2>Social Media Marketing</h2>
+            <p>Accelerates the preparation, approvals and scheduling steps needed to publish droves of social media posts across your channels.</p>
+            <a href="#">LEARN MORE</a>
+        </div>
+    </div>
+    <div id="social_selling">
+        <div>
+            <h2>Social Selling</h2>
+            <p>Ensures messaging is on point as you scale your social media content across sales teams, executives and employees.</p>
+            <a href="#">LEARN MORE</a>
+        </div>
+        <div><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fe29c07bcae60a0f0063646_SocialSelling-01.svg" alt=""></div>
+    </div>
+    <div id="analytics">
+        <div>
+            <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fe29c543d22be5e1c68aaf2_SocialMediaAnalytics-01.svg" alt="">
+        </div>
+        <div>
+            <h2>Social Media Analytics</h2>
+            <p>Gives you performance analytics for each piece of social media content and helps you shape your A.I. writing model to constantly improve your shortform content.</p>
+            <a href="#">LEARN MORE</a>
+        </div>
+    </div>
+    <div id="tag"><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fe29d706767c54673422575_AndTheresMore_Text-01.svg" alt=""></div>
+    <div id="artificail">
+        <div>
+            <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fe2a107354a9a53719df14e_Icon_Circles_AI.svg" alt="">
+            <h2>Artificial Social Intelligence Engine</h2>
+            <p>Our AI constantly learns from your and builds a writing model based on what is most engaging for your audience.</p>
+            <a href="#">LEARN MORE</a>
+        </div>
+        <div><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fe2a106b3d5038e3fa9b20f_Icon_Circles_Parent_Child.svg" alt="">
+            <h2>Parent-Child Accounts</h2>
+            <p>Make it easy to manage, publish and analyze all of your social media content across multiple products, brands, regions, franchises, and users all from one centralized place.</p>
+            <a href="#">LEARN MORE</a></div>
+        <div><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fe2a1073d22be4b6068b0ff_Icon_Circles_Pricing.svg" alt="">
+            <h2>Just-right Pricing</h2>
+            <p>Whether you’re just starting to social media marketing program or you’re ready to extend it across executives and sales teams, we have an edition right-sized for your needs.</p>
+            <a href="#">LEARN MORE</a></div>
+    </div>
+    <div id="quotation"><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd7b374b200124961cb94ac_home-quote-icon.png" alt=""></div>
+    <div id="bottom">
+        <div id="quote">“Before Lately, social media was a weak point for me to do super consistently – because I didn’t have the time and didn’t want to sound dumb or boring. Now I have confidence because Lately takes the pressure off and makes me sound smart!”</div>
+        <div id="logo">
+            <div><img id="profile" src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6000f81ed69a057cba01da03_1516314003757.jpeg" alt=""></div>
+            <div>
+                <h2>Alicia Jimenez</h2>
+                <p>Senior Vice President, Global Head of Technology & Platform Services Delivery, SAP</p>
+            </div>
+            <div><img id="sap" src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6001c93ce5e6851d13888269_saplogowhite-p-500.png" alt=""></div>
+        </div>
+    </div>
+    <div id="info"><h2>Customers See Real Results From The Free Social Media Content Created And Managed With Lately</h2></div>
+    <div id="final">
+        <div>
+            <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fe8eaa301171b1f5cc69d87_Color_Icons_Engagement.svg" alt="">
+            <div class="percent">+12,000%</div>
+            <div class="title">ENGAGEMENT</div>
+            <div class="caption">No – that’s not a typo</div>
+        </div>
+        <div id="middiv">
+            <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fe8eaa39cc80bee2292190c_Color_Icons_Clicks.svg" alt="">
+            <div id="midgreen" class="percent">+245%</div>
+            <div id="tgreen" class="title">MORE CLICKS</div>
+            <div id="cgreen" class="caption">More clicks = mo’ better</div>
+        </div>
+        <div>
+            <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fe8eaa333bab928ce2f7868_Color_Icons_Leads.svg" alt="">
+            <div class="percent">+200%</div>
+            <div class="title">MORE LEADS</div>
+            <div id="cap">And higher quality leads when actively used by marketing and sales</div>
+        </div>
+    </div>
+</html>
