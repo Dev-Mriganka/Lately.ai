@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIN</title>
+    <link rel="stylesheet" href="login2.css">
+</head>
+<body>
+
+    <div id="main_box">
+        <div id="heading">
+            <h1 id="h1">Welcome back to Lately!</h1>
+            <p id="p">Hi there, superstar. We missed ya.</p>
+            <hr>
+        </div>
+
+        <form onsubmit="loginForm(event)" id="form">
+
+            <div id="email_box">
+                <p>Email or Username:</p>
+                <input type="email" id="email" placeholder="Email or Username" required/>
+            </div>
+
+            <div id="password_box">
+                <p>Password:</p>
+                <input type="password" id="password" placeholder="Enter your Password" required/>
+            </div>
+
+            <button id="submit">Log In</button><span>Forgot Password?</span>
+
+        <form>
+
+       <p id="signup_line">Don't have an account yet?<a id="signup_link" href="getStarted.html">Sign up now!</a></p>
+       <button id="help_btn">? Help</button>
+    </div>
+</body>
+</html>
+<script src="login2.js"></script>
