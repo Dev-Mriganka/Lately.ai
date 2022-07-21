@@ -12,6 +12,6 @@ for (let i = 0; i < plus.length; i++) {
    })
 }
 
-// document.querySelector(".w-nav-button").addEventListener("click", function (){ 
-//    document.querySelector(".navbar-collapse").classList.toggle("open")
-// })
+document.querySelector(".w-nav-button").addEventListener("click", function (){ 
+   document.querySelector(".navbar-collapse").classList.toggle("open")
+})
