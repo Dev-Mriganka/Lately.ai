@@ -20,18 +20,13 @@ img {
    max-width: none;
 }
 
-/* body{
-   margin: 0px !important;
-      padding: 0px !important;
-   border: 1px solid red;
-} */
 
-/*! --------- Main Block--------- */
+
+/*? --------- Main Block--------- */
 .hero {
    display: block;
    padding-top: 60px;
    padding-bottom: 60px;
-   border: 0px solid #000;
    background-color: var(--dark-green);
    background-image: none;
    background-size: auto;
@@ -615,7 +610,7 @@ img {
 
 
 
-
+/*? ------------ Different Language Block Starts ------------- */
 
 
 
@@ -649,7 +644,7 @@ img {
 
 
 
-
+/*? ------------ Big Heart Block Starts ------------- */
 
 
 .section-2 {
@@ -764,7 +759,7 @@ img {
 }
 
 
-
+/*? ------------ Quote Block Starts ------------- */
 
 
 .quote-block-2 {
@@ -785,17 +780,11 @@ img {
 
 
 .quote-bubble {
-   /* position: static; */
-   /* left: 0%;
-   top: 0%; */
-   /* right: auto; */
-   /* bottom: auto; */
    display: inline-block;
    width: 8%;
    height: auto;
    max-width: none;
    margin: -140px auto 35px;
-   /* object-fit: fill; */
 }
 
 .container-26 {
@@ -851,10 +840,12 @@ img {
    border-radius: 100px;
    text-align: left;
 }
+
 .columns-16.w-row {
    display: flex;
    align-items: center;
 }
+
 .column-21 {
    display: block;
    padding-left: 80px;
@@ -895,7 +886,6 @@ img {
    padding-right: 0px;
    padding-left: 0px;
    border-radius: 0px;
-   -o-object-fit: fill;
    object-fit: fill;
 }
 
@@ -917,12 +907,31 @@ img {
 
    .column-21 {
       display: block;
-      padding-left: 0px; 
+      padding-left: 0px;
       align-items: center;
    }
 
+   .image-48 {
+      width: 100px;
+      border-radius: 100px;
+      text-align: left;
+   }
+
+   .column-24 {
+      padding-top: 30px;
+      padding-right: 0px;
+   }
+
+   .column-21 {
+      padding-left: 20px;
+   }
+
    .w-col-9 {
-      width: 100%;
+      width: 50%;
+   }
+
+   .w-col-1 {
+      width: 25%;
    }
 
    .column-24 {
@@ -996,13 +1005,18 @@ img {
       padding-right: 0px;
    }
 
-   .image-17 {
+   .image-48 {
       width: 120px;
-      max-width: 100%;
-      margin-bottom: 14px;
+      border-radius: 100px;
+      text-align: left;
    }
 
    .quote-bubble {
       margin: -140px auto 20px;
+   }
+
+   .columns-16.w-row {
+      display: flex;
+      flex-direction: column;
    }
 }
