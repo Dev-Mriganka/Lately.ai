@@ -1,0 +1,420 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        *{
+            font-family: 'Montserrat', sans-serif,'Noto Sans', sans-serif;
+        }
+        #intro-head{
+            background-color: #133F38;
+            text-align: center;
+            padding: 75px 0px;
+
+        }
+        #intro-head strong{
+            font-size: 44px;
+            color:#FFFFFF;
+        }
+        #intro-head p{
+            font-size: 21px;
+            color:#FFFFFF;
+        }
+        #intro-head div{
+            margin: 0px 229px 0px 229px;
+            padding:
+        }
+        #contact{
+            background-color: #E8F8F2;
+            padding: 60px 0px;
+            display: flex;
+            margin:auto;
+            margin-left: 60px;
+        }
+        #contact>form>div:first-child{
+            padding: 35px 45px 25px;
+            background-color: white;
+        }
+        /* #contact label{
+            margin:0px 0px 4px;
+        } */
+        
+        .star{
+            color:#FF0000;
+            font-size: 13px;
+            
+            
+        }
+        span{
+            font-size: 13px;
+            color:#333333;
+        }
+        #names{
+            margin-top: 20px;
+        }
+        #names div{
+            display: inline;
+            /* height:40px;
+            width:200px;
+            margin: 0px 8px 0px 0px;
+            border:1px solid red; */
+        }
+        .labels{
+            height:20px;
+            width:297px;
+            margin-right: 300px;
+            
+            
+        }
+        #names input{
+            height:40px;
+            width: 290px;
+            padding:0px 15px;
+            /* margin-right: 60px; */
+            background-color: #F5F8FA;
+            border: 1px solid #cbd6e2;
+        }
+        #email{
+            margin-top: 20px;
+        }
+        #email input{
+            height:40px;
+            width: 586px;
+            background-color: #F5F8FA;
+            border: 1px solid #cbd6e2;
+        }
+        #contactbg{
+            background-color: #E8F8F2;
+        }
+        #phone input{
+            height:40px;
+            width:290px;
+            padding:0px 15px;
+            /* margin-right: 60px; */
+            background-color: #F5F8FA;
+            border: 1px solid #cbd6e2;
+        }
+        #phone div{
+            display: inline;
+        }
+        /* #phone div:last-child{
+            display: inline;
+            border: 1px solid red;
+            margin-left: 100px;
+            
+        } */
+        #phone{
+           
+            margin-top:20px ;
+        }
+        .second_label{
+            margin-left: -40;
+        }
+        #message{
+            margin-top: 20px;
+        }
+        #message textarea{
+            background-color: #F5F8FA;
+            border: 1px solid #cbd6e2;
+        }
+        #send{
+            margin: 18px 0px;
+            padding:17px 0px;
+            height:72px;
+            width:594px;
+        }
+        #send input{
+            background-color: #20C76E;
+            padding: 12px 24px;
+            color:white;
+            border: none;
+        }
+        .text{
+            margin-bottom: 29px;
+            font-family: 'Noto Sans', sans-serif;
+            color: #5f5f5f;
+            font-size: 20px;
+            line-height: 30px;
+            width:70%;
+            
+        }
+        #box_right{
+            margin-left: 50px;
+        }
+        #try_button{
+            padding:9px 25px;
+            border:2px solid #00c66b;
+            border-radius: 4px;
+            background-color: white;
+            color:#00c66b;
+            font-size: 15px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        #try_button:hover{
+            background-color: #00c66b;
+            color:white;
+        }
+        #social_icons{
+            height:60px;
+            width:360px;
+            margin:30px 0px 0px;
+        }
+        #social_icons img{
+            width:50px;
+            height:60px;
+            padding:0px 0px 10px ;
+
+        }
+        #totalcount{
+            display: inline;
+            color: red;
+        }
+        @media all and (min-width:320px) and (max-width:765px){
+            #contact{
+                flex-direction: column;
+                margin:auto;
+            }
+            #condiv{
+                height:auto;
+                width:80%;
+                /* margin-left: 200px; */
+
+            }
+            #contact{
+                margin-left: 10px;
+            }
+        
+        
+            .star{
+                color:#FF0000;
+                font-size: 13px;
+                
+                
+            }
+            span{
+                font-size: 13px;
+                color:#333333;
+            }
+            #names{
+                margin-top: 20px;
+            }
+            #names div{
+                display: inline;
+                /* height:40px;
+                width:200px;
+                margin: 0px 8px 0px 0px;
+                border:1px solid red; */
+            }
+            .labels{
+                height:20px;
+                width:auto;
+                margin-right: 200px;
+                
+                
+            }
+            #names input{
+                height:20px;
+                width: 150px;
+                padding:0px 15px;
+                /* margin-right: 60px; */
+                background-color: #F5F8FA;
+                border: 1px solid #cbd6e2;
+            }
+            #email{
+            margin-top: 20px;
+        }
+            #email input{
+                height:20px;
+                width: 300px;
+                background-color: #F5F8FA;
+                border: 1px solid #cbd6e2;
+            }
+            #contactbg{
+                background-color: #E8F8F2;
+            }
+            #phone input{
+                height:20px;
+                width:150px;
+                padding:0px 15px;
+                /* margin-right: 60px; */
+                background-color: #F5F8FA;
+                border: 1px solid #cbd6e2;
+            }
+            #phone div{
+                display: inline;
+            }
+            /* #phone div:last-child{
+                display: inline;
+                border: 1px solid red;
+                margin-left: 100px;
+                
+            } */
+            #phone{
+            
+                margin-top:20px ;
+            }
+            .second_label{
+                margin-left: -100px;
+            }
+            #message{
+                margin-top: 20px;
+            }
+            #message textarea{
+                background-color: #F5F8FA;
+                border: 1px solid #cbd6e2;
+                width:300px;
+                
+                
+            }
+            #send{
+                margin: 18px 0px;
+                padding:17px 0px;
+                height:72px;
+                width:300px;
+            }
+            #send input{
+                background-color: #20C76E;
+                padding: 12px 24px;
+                color:white;
+                border: none;
+            }
+            .text{
+                margin-bottom: 29px;
+                font-family: 'Noto Sans', sans-serif;
+                color: #5f5f5f;
+                font-size: 20px;
+                line-height: 30px;
+                width:70%;
+                
+            }
+            #box_right{
+                margin-left: 50px;
+            }
+            #try_button{
+                padding:9px 25px;
+                border:2px solid #00c66b;
+                border-radius: 4px;
+                background-color: white;
+                color:#00c66b;
+                font-size: 15px;
+                font-weight: 700;
+                text-decoration: none;
+            }
+            #try_button:hover{
+                background-color: #00c66b;
+                color:white;
+            }
+            #social_icons{
+                height:60px;
+                width:360px;
+                margin:30px 0px 0px;
+            }
+            #social_icons img{
+                width:50px;
+                height:60px;
+                padding:0px 0px 10px ;
+                
+
+            }
+            #totalcount{
+                display: inline;
+                color: red;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="intro-head">
+        <div >
+            <strong>Contact Us</strong>
+            <p>Waving hi! 👋 Fill out the contact form below, connect with us on social or try Lately free now.</p>
+        </div>
+    </div>
+    <div id="contactbg">
+        <div id="contact">
+        
+            <form action="" id="form">
+                <div id="condiv">
+                    <div id="names">
+                        <label class="labels" for=""><span>First Name<span class="star">*</span></span></label><label for=""><span class="second_label">Last Name<span class="star">*</span></span></label><br>
+                        <div><input type="text" required></div> <div><input type="text" required></div>
+                    </div>
+                    <div id="email">
+                        <label for=""><span>email</span><sapn class="star">*</sapn></label><br>
+                        <input type="text" required>
+                    </div>
+                    <div id="phone">
+                        <label class="labels" for=""><span>Phone Number<span class="star">*</span></span></label><label for=""><span class="second_label">Company Name<span class="star">*</span></span></label><br>
+                        <div><input type="text" required></div> <div><input type="text" required></div>
+                    </div>
+                    <div id="message">
+                        <label for="">Message<sapn class="star">*</sapn></label> <span>total words count</span> <p id="totalcount">0</p><br>
+                       
+                        <textarea name="" oninput="countwords()" id="mbox" cols="78" rows="5"></textarea>
+                        
+                    </div>
+                    <div id="send">
+                        <input id="send_button" type="submit" value="SEND"></input>
+                    </div>
+                </div>
+            </form>
+            <div id="box_right">
+                <div class="text">Lately’s AI learns and augments your brand voice, makes it more effective and amplifies your social media army of “one” to “many.”</div>
+                <a id="try_button" href="#">TRY IT FREE</a>
+                <div id="social_icons">
+                    <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/600b17e7873061f51390f350_social_facebook.svg" alt="">
+                    <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/600b17e763a1ef7949a2e401_social_linkedin.svg" alt="">
+                    <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/600b17e85c4896f2f41a1d6a_social_twitter.svg" alt="">
+                    <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6226466502e53219f7efd367_ig.svg" alt="">
+                    <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6226466598aa3eef80ba3f0e_yt.svg" alt="">
+                    <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/62264665c664c3604de9d3d7_tt.svg" alt="">
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    
+    
+    document.querySelector("#form").addEventListener("submit",function(e){
+        e.preventDefault();
+        let message = document.querySelector("#mbox").value;
+        message = message.split(" ")
+        // console.log(message)
+        // console.log(message.length)
+        if(message.length<200){
+            alert("message box should have more than 200 words")
+            return;
+        }
+        else{
+            window.location="index.html"
+        }
+    });
+    let countwords =()=>{
+        let message = document.querySelector("#mbox").value;
+        // console.log(message.length)
+        message = message.split(" ")
+        //console.log(message)
+        let toatlcount =document.querySelector("#totalcount").textContent;
+        totalcount.textContent = message.length;
+       
+    }
+</script>
