@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,6 +7,7 @@
     <title>Payment</title>
     <link rel="stylesheet" href="payment.css">
 </head>
+
 <body>
     <header id="header">
         <a href="index.html"><img src="https://app.lately.ai/img/lately_logo_nav_beta.01a45e48.jpg" /></a>
@@ -24,37 +26,43 @@
         </div>
 
         <!-- form start -->
-        <form onsubmit="return submitForm(event)" id="plan_form" >
+        <form onsubmit="return submitForm(event)" id="plan_form">
             <div id="cc_container">
                 <p>Credit or Debit Card*</p>
-                <input type="tel" inputmode="numeric" name="credit-number"   pattern="\d*" maxlength="19" placeholder="Card number" id="cc_number" required />
+                <input type="tel" inputmode="numeric" name="credit-number" pattern="\d*" maxlength="19"
+                    placeholder="Card number" id="cc_number" required />
                 <p id="cc_date">MM/YY/CVC</p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVUHVakAqmgYSGFWF8GH0BIArT3YEPrzwjJw&usqp=CAU" id="cc_img" />
-                <span id = "message-cc_card" style="color:red"></span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVUHVakAqmgYSGFWF8GH0BIArT3YEPrzwjJw&usqp=CAU"
+                    id="cc_img" />
+                <span id="message-cc_card" style="color:red"></span>
             </div>
 
             <div id="card_holder_details">
                 <div>
                     <p>Name on Card*</p>
                     <input type="text" id="card_holder_name" required />
-                    <span id = "message_name" style="color:red"></span>
+                    <span id="message_name" style="color:red"></span>
                 </div>
                 <div>
                     <p>Phone Number*</p>
                     <input type="text" id="card_holder_ph" required />
-                    <span id = "message_ph" style="color:red"></span>
+                    <span id="message_ph" style="color:red"></span>
                 </div>
                 <div>
                     <p>Coupon Code</p>
                     <input type="text" id="coupon_code" />
-                    <span id = "message_coupon" style="color:red"></span>
+                    <span id="message_coupon" style="color:red"></span>
                 </div>
             </div>
 
             <div id="plane_option">
                 <div id="plan_option_heading">
-                    <div> <h1>2. Plan Options</h1></div>
-                    <div> <h3>PUBLISH WITH</h3></div>
+                    <div>
+                        <h1>2. Plan Options</h1>
+                    </div>
+                    <div>
+                        <h3>PUBLISH WITH</h3>
+                    </div>
                 </div>
                 <div id="planCompnay_img">
                     <img src="https://app.lately.ai/img/hootsuite-logo.6fb06cd0.png" />
@@ -65,45 +73,105 @@
 
             <div id="plan_details">
                 <div id="litly_plan">
-                    <span>Litely</span> <input type="radio"  name="rate" value="true" id="radio" checked />
+                    <span>Litely</span> <input type="radio" name="rate" value="true" id="radio" checked />
                     <p>7 Day Free Trial!</p>
                     <h2>$49/month</h2>
                     <p>For individuals and micro-businesses</p>
 
                     <h3>Litely Includes:</h3>
-                    <div id="check_Logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" /><p>Generate from video, audio or text</p></div>
-                    <div id="check_Logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" /><p>A.I. learning for one brand voice</p></div>
-                    <div id="check_Logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" /><p>A.I.-recommended hashtags</p></div>
-                    <div id="check_Logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" /><p>Single-user</p></div>
-                    <div id="check_Logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" /><p>Up to 100 posts per months</p></div>
-                    <div id="check_Logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" /><p>Email support</p></div>
+                    <div id="check_Logo"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" />
+                        <p>Generate from video, audio or text</p>
+                    </div>
+                    <div id="check_Logo"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" />
+                        <p>A.I. learning for one brand voice</p>
+                    </div>
+                    <div id="check_Logo"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" />
+                        <p>A.I.-recommended hashtags</p>
+                    </div>
+                    <div id="check_Logo"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" />
+                        <p>Single-user</p>
+                    </div>
+                    <div id="check_Logo"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" />
+                        <p>Up to 100 posts per months</p>
+                    </div>
+                    <div id="check_Logo"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" />
+                        <p>Email support</p>
+                    </div>
 
                     <h3>Publish to:</h3>
-                    <div id="check_Logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" /><p>Facebook Company Pages</p></div>
-                    <div id="check_Logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" /><p>Instagram Company Pages</p></div>
-                    <div id="check_Logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" /><p>LinkedIn Company & Personal Pages</p></div>
-                    <div id="check_Logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" /><p>Twitter Company & Personal Pages</p></div>
+                    <div id="check_Logo"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" />
+                        <p>Facebook Company Pages</p>
+                    </div>
+                    <div id="check_Logo"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" />
+                        <p>Instagram Company Pages</p>
+                    </div>
+                    <div id="check_Logo"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" />
+                        <p>LinkedIn Company & Personal Pages</p>
+                    </div>
+                    <div id="check_Logo"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" />
+                        <p>Twitter Company & Personal Pages</p>
+                    </div>
 
-                    <div id="youtube_logo_link"><img src="data:image/jpeg;base64,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"><a href="https://www.youtube.com/watch?v=Nab1UUNDQgc"><p>Watch Litely In Action</p></a></div>
+                    <div id="youtube_logo_link"><img
+                            src="data:image/jpeg;base64,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"><a
+                            href="https://www.youtube.com/watch?v=Nab1UUNDQgc">
+                            <p>Watch Litely In Action</p>
+                        </a></div>
                 </div>
 
                 <div id="Professionally_plan">
                     <div id="Professionally">
-                        <span id="span">Professionally</span> <input  type="radio" value="false" name="rate" id="radio2" />
+                        <span id="span">Professionally</span> <input type="radio" value="false" name="rate"
+                            id="radio2" />
                         <p>7 Day Free Trial!</p>
                         <h2>$129/month</h2>
                         <p>For teams, small agencies, and high-growth businesses</p>
-    
+
                         <h3>Everything in Litely plus:</h3>
-                        <div id="check_Logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" /><p>Video transcript editing</p></div>
-                        <div id="check_Logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" /><p>Video captioning</p></div>
-                        <div id="check_Logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" /><p>Add video intros/outros</p></div>
-                        <div id="check_Logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" /><p>A.I.-recommended keywords</p></div>
-                        <div id="check_Logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" /><p>Up to 3 users (add more @$30 each)</p></div>
-                        <div id="check_Logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" /><p>Unlimited posts</p></div>
-                        <div id="check_Logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" /><p>Priority support</p></div>
-    
-                        <div id="youtube_logo_link"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBhUTBw8SERAQFhIaFRYYDRUbFhkVGBUYFxgVGxUYHSkgGBolIBYYLTEhJSsrOi4uFx8zODMtOCgtLisBCgoKDQ0OGxAQFi0lICYxLSstLisuLy0rLS0tLSstKy42LSsyLi01LzErLS8rKystLS0tLS0rLS0tLSstLS0tLf/AABEIAOEA4QMBEQACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABwIDBAUGAQj/xABKEAABAwICBAcIDgkFAAAAAAAAAQIDBBEFBgchMXESQVFhgZHBEyJzobGy0dIVJDI2QkRTVIKDkpOUwhYjMzVDUmKisxQlY+Hw/8QAGwEBAAIDAQEAAAAAAAAAAAAAAAIEAQMFBgf/xAA3EQEAAQICBAsGBwEBAAAAAAAAAQIDBBEFElGRExQhMUFSYXGhsdEVIjJTgcEGMzRCQ+HwYiP/2gAMAwEAAhEDEQA/AJxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGtxfHsMwZv8AuEzWquxu167mprNdd2ij4pWsPg7+In/zpz7eje5Ss0nUbF9p00knO57WJ4kcpXqxlPRDrW/w/cn47kR3Rn6Nc/ShVr7ikjTfM5fyoQ45V1VmPw9b6bk7v7Y8mkvF1/ZwwJva9fzIRnF17IbI0Bh+mqrw9Fh2kbH3bEgTdC7teY43c7GyNBYT/rfHotO0g5gXY+NPqU7THGricaEweyd627PmYnfxmpuhZ6DHGbm1KNDYPqeMrbs75iX4yqfVR+qY4xd2pRojBfL8Z9VDs55iX4277uP1Rxi71kvZWC+XG+fVQub8wrtrJPss9Uxw93rM+zMH8qPH1U/pZmD55L/b6Bw9zrM+zcH8qPF5+leP/PJetPQOHudZn2dhPlQfpXj/AM8l609A4e51j2dhPlQ9/SzMHzyX+30Dh7nWY9m4P5UKkzfmFPjkn2WeqOHu9Zj2Zg/lR4+qpM5ZiT42/wC7j9UcPd6zHsvBfKjfPqrbnbMafGlX6qP1TPGLu1GdE4L5fjPqutz3mJP46L9Sz0GeM3NqM6HwfU8ZXG6QMwptkjX6hvYZ41cRnQuD6s71xukXH0+QXfCvY5Bxq52IzoPCf9b/AOl+PSXjCftIqddzHp+dSUYuvZDXOgMN0VVeHoyGaT61Pd0sa7pXJ2KS45V1Wufw/a6Lk7oZ1LpQgcvtykc3nZMjvEqNJRjI6aWi5+Hqo+C5E98Zerp8GzTg+MuRKSZEkX4Dk4L+hF29FyxReor5pcrE6OxOH5a6eTbHLH+726NqiAAAHEZ6zmuFuWDC1RZ7d+/akaLxInG/yFW/f1fdp53d0Xorhv8A1u/D0Rt/rzRZLLJNKrpnK57lu5yqqqq8qqu0585zyy9XTTFMRTTGUQpMJAAAAAAAAAAAAAAAAAAAAAAAAAvr3ASFkfO8iStp8adwkdZI5VXWi8TXrxp/V18pdsYifhqec0pomnKbtiO+PvHpuSUXnmADXZhxNuD4NJM7WrG96nK9dTU61Qhcr1KZlZwmHm/eptx0+XSgWWWSaVXTKrnvVVcq7Vcq3Ves5Eznyvf00xTEUxHJCkMgAAAAAAAAAAAAAAAAAAAAAAAAAAeLrTWBNWQcZdjGX292W8sPePXjWyd65d6W6bnTw9zXo5ed4nSuFixiJ1Y5J5Y+8b3SG9zEeaXa9WU8EDfhq57tzURrU63L9kp4urkil6L8P2c6q7s9GUb+fy8UaFF6cAAAAAAAAAAAAAAAAAAAAAAAAAAAAA7bRTXrBjr4l9zNHf6TFunic7qLWEqyry2uHp6zrWIr6aZ8J/vJLB0HkkPaUp1lzTwb6o4o06+E5fOTqOdipzuPY6DoinC57Zn0cjcrOuXAXAXAXAXAXAXAXAXAXAXAXAXAXAXAXAXAXAXAXAXAXAXAXAXA3GTp1p8007kW36xE6HIrPzG2zOVyFPSNOthbkdnlyp3Oq8Gg3Psvdc31HM5qdTGp6Tl35zuS9zounVwlH+6ZaA0r4AAAAAAAAAAXJYJoUaszXNR6I5qq1URzV40XjQzMTCNNdNWcRPNyT2LZhIAAAAAAAAAAAAAAAAZOGS9wxOJ38kkS9T0UlTOVUNd6nWt1RtifJ9EHYfO0A5pk7pmWpX/ml8TlTsOVd+OXvsFGWGtx2R5NXc1rRcBcBcBcBcBcBcBcBcCbcs4fR4nkmmZXxtkYsTdTm3svKi8S86HTtUxVbiJh4nG3rlrG3KrdUxOc8zlcxaN5IbvwN/Cb8m92vof6es0XML00OnhNOxPu34+sfePTc4KrpqijnVlWx0b04nJZf+050KkxMTlMPQW7tFynWonOOxZuYTLgLgLgLgLgLgLgLgLgLgLgLgeo7grfkBzp+9kec62s8BwKC8afw8ZnXlmm/wAjjl1/FL3GHjKzRHZHkwyLcAAAAAAAAAAE75H96NN4Jp1LP5cPDaS/V3O+W8Nqi1eMYHQ4tBwaqNrk5FTZzoqa2rzoRqopqjKYb7GJu2Kta3VlKOMe0fVFMquwlyvT5N6ojvou2O6bb1KdzDTHLS9FhdOU1e7fjLtjm3OLnhlpplZUNcx7drXNVFToUqzExOUu5RXTXTrUznHYtmEgAAAAAAAAAAAeO1tUMxzpM9l+fxl3Xea4t2I7xFb4jLfjkk89SpVzy9Ba/Lp7o8mOYbAAAAAAAAAAAnjI/vRpvBNOnZ/Lh4bSX6u53y3htUQCiSNkrbPQDR43gFHiMNq2NJGpsXY5u5ya0IV26ao5YWsPirtirO3Vl5T9Ed43kKrpbuwp3dmfyLZJE3cT/FuUp14aY5aeV6LC6at1+7ejVnb0eseLkJGOikVsqK1zdSoqKiovIqLrQrZO1ExMZxPIpDIAAAAAAAAALsA33d3/APrm3NQ1IafEP3hJ4STzlNdXPK3a/Lp7o8lgw2AAAAAAAAAABPGRvehTeCYdOz+XDw2kv1dzvlvTaogAABiz0jX649S+IMxLQY1gNDireDiMSK5Njk1PTc5OLm2Guu3TXzwt4bGXsPOdur6dG5GmacsLgLkVs7HscvetVUSX7Pwk50tuKN2zqdL1OA0jxrkmiYmPrG/7OeNLpAAAAAAAAADdXNik1eIfvCTwknnqRq55WbX5dPdHksXIplwFwFwFwFwFwFwFwFwJ5yN70KbwTDp2fy4eG0l+rud8t6bVIAAAMDF8Zw/Bqfh4lK2NOJNrnczWprcu4jVXTTGcy32MNdv1atunP/bUaZk0kVNaiswaPuLPlHIiyLuTYzx9BTrxMzyUvRYTQluj3r05zsjm9Z8HCyyyTSq6Zyue7a5zlVy71XWpWnl5ZdymmKY1aYyjsU3MMlwFwFwFwFwFwFwFwNybVNrMR1YjL4STz1IVc8rFr8unujyY5FsAAAAAAAAAAyJ7yL7z6XwTDp2fgh4bSX6u53y3psUgDDxTFKHCabh4jK2NnOuteZGprcvMhGqqKYzmW2zYuXqtW3TnKOMxaTpprswBnc2/KvROFvazYm919xUrxMzyUvQ4XQdNPvX5z7I5vrPpvR/VVVRWVCvq3ukkdtc5yqu668XMVZmZnOXdoopop1aIyjZC0YTAAAAAAAAAABcyN93N/J40NijnDWYy3gYzOnJNN/kcRq+KVjDznaonsjyhhkW4AAAAAAAAAAJ7yJ7zqXwTDp2fgh4fSX6u53y2uIV9HhtOr6+VkTE43ORE3JyrzITqqimM5VbVq5dq1aKZmexHWYtJ6rdmX4/rZG+Nsfa7qKleJ6KXoMLoP91+fpH3n03o8rq6rxGoWSvkdK9fhOdfoTiROZCrMzM5zLvW7VFqnVopyjsY5hsAAAAAAAAAAAAA8ctmqCOdI3sQ7kUt6jzvGHG5pZ3LMtSnJPL43qvaV7ke/LsYOc8PbnsjyasgsgAAAAAAAAAB3lNpDfhWW4KfCoryxxta6R/uUVNvBYi3dvVU6SzGI1aYimHEr0RF7EV3btXJM5xEc+9x2JYlW4rU8PEZXSv4lcupE5ERNTU3GiqqapzmXWtWbdmnVt05QxCLaAAAAAAAAAAAAAAALcLVygzyfQPsavJ4jp6rwvDIdz9EsOcalOV7VT6TGr5VUo3o9+XrNG1a2Eo7vvLnzWvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGRh8fdsRib/PJE37T0TtM088Nd2dW3VOyJ8n0mdV8+QnpWhWLODltqkiid5W/lKGIj33r9DVZ4WI2TMff7uPNDrAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG4ydD/qM1UzbbZWL9nv180najOuFTHVauGuT2efI+hDpvCow0z0K2p527O/jdvXv2ea8qYmnml6LQN347fdP2n7IxKj0QAAAAAAAAAAAAAAAAAAAAAAAAAAAAB22iOhWqzOsip3tPG5fpv71vi4fUWMPTnVm5Gm7urh4p60+Ecs/ZM5eeSaXOGD+zuXpYW+7VOFH4RutvXa3SQuU61Mwt4HEcBfpr6OnunnfPaorVs5FRU1KiprRU2oqcSnNe5LgLgLgLgLgLgLgLgLgLgLgLgLgLgLgLgLgLgLgLgLgLgLgLgeXAm7RdgrsLy4j50tJVKj15UZazE6tf0i9Yo1ac9ryGl8Twt/Vjmp5Pr0/7sdib3KAIx0i5FlmndVYIzhK7XNEia1XjkYnGq8ace1Cresz8VL0Oi9JxTEWb090/aftKLti6+IqPRPAAAAAAAAAAAAAAAAAAAAAAAAAAvYDucg5GmxiZs+KsVtK1UVrVTXL0cUfPx8XKWLVnW5Z5nI0lpOmzE27c+95f35JnRERNRdeTAAADn8eybgmOvV1XDwZV/iMXgvXeqandKKa67VNXPC7h9IYixGVNXJsnlj/AHc42t0SOv7QrNXEkkOv7TV7DROG2S6tvT0fvt7p9fVp59F2Yo1/Vup3pzTPTzmIQnD19i1TpvCzzxVH0j1YkmjrNDNlO126oj7VQxwFextjS+Dn93hLGdkXNLNtE/olhXyPI8Dc2NkaTwc/yRun0WXZNzK3bQzf2r5FHBV7EvaGE+bHiodlPMTdtDP936BwVexnj+F+ZC27LWOt20VR9w70GODr2JRjMPP8kb1p2A4y3bRVP4WT1TGpVsSjFWJ/kp3woXB8WTbSVP4WX1Rq1bJS4xZ+ZTvhQuF4km2ln/DSeqY1Z2M8Pa68b4UrQVybaeb7h/oGrOxnhbfWjfDz/Q1vyE33D/QNWdhwtvrRvhUmH167Keb8PJ6BqzsY4W3143wqTC8TXZS1H4aT1Rq1bGOHtdeN8K0wbF12UdT+Fl9Uzq1bJY4xZ+ZTvj1XG5fxt2yiqfw0nahnUq2Izi8PH8lO+F1uVswO9zQ1H3K9o4OvYjOOw0fyRvXG5PzI7ZQzdTU8qmeCr2Me0MJ82F5mR80P2UT+mSJPK8cFc2ITpLBx/JG6fRkR6PM0P20yN31EXY5SXAV7EJ0tg4/f4Syo9GOZX+6SBu+oXsapni9bXOmsJG3d/bPpNE2KPX27UwMT+hr3r40aSjDVdMtFenbMfBRM9+UerrsB0dYJhT0fOi1MibFktwUXlSNNXXc3UWKae1zMRpfEXYyj3Y7PV2Gw3OWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH/2Q=="><a href="https://www.youtube.com/watch?v=Nab1UUNDQgc"><p>Watch Professionally In Action</p></a></div>
+                        <div id="check_Logo"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" />
+                            <p>Video transcript editing</p>
+                        </div>
+                        <div id="check_Logo"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" />
+                            <p>Video captioning</p>
+                        </div>
+                        <div id="check_Logo"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" />
+                            <p>Add video intros/outros</p>
+                        </div>
+                        <div id="check_Logo"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" />
+                            <p>A.I.-recommended keywords</p>
+                        </div>
+                        <div id="check_Logo"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" />
+                            <p>Up to 3 users (add more @$30 each)</p>
+                        </div>
+                        <div id="check_Logo"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" />
+                            <p>Unlimited posts</p>
+                        </div>
+                        <div id="check_Logo"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDwaDOGfqAcWdLGxdWKZ3GdPMA1kuZ2S2-g&usqp=CAU" />
+                            <p>Priority support</p>
+                        </div>
+
+                        <div id="youtube_logo_link"><img
+                                src="data:image/jpeg;base64,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"><a
+                                href="https://www.youtube.com/watch?v=Nab1UUNDQgc">
+                                <p>Watch Professionally In Action</p>
+                            </a></div>
                     </div>
                 </div>
 
@@ -120,7 +188,8 @@
                 </div>
                 <div id="article_box">
                     <img src="https://app.lately.ai/img/upcontent.42a0fa4a.png" />
-                    <p>Don't have text to generate from? Our Discover Articles feature will find it for you! Powered by UpContent.</p>
+                    <p>Don't have text to generate from? Our Discover Articles feature will find it for you! Powered by
+                        UpContent.</p>
                 </div>
             </div>
 
@@ -137,17 +206,21 @@
                 </div>
             </div>
 
-            <input type="checkbox" value="true" id="check_box" required/><span>* I agree to Lately's Terms & Conditions and Privacy Policy.</span>
+            <input type="checkbox" value="true" id="check_box" required /><span>* I agree to Lately's Terms & Conditions
+                and Privacy Policy.</span>
 
-            <p>By clicking 'Submit and Create Account,' you understand that your credit card will be charged the above amount after your 7-day trial has ended. If you cancel before your trial has ended, your credit card will not be charged.</p>
+            <p>By clicking 'Submit and Create Account,' you understand that your credit card will be charged the above
+                amount after your 7-day trial has ended. If you cancel before your trial has ended, your credit card
+                will not be charged.</p>
 
             <button id="submit">START FREE TRIAL</button>
             <button id="help_btn">? Help</button>
             <div id="empty"></div>
         </form>
     </div>
-    
+
 </body>
+
 </html>
 
 <script src="payment.js"></script>

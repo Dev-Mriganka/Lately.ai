@@ -82,7 +82,10 @@ body {
    font-weight: 700;
    text-transform: uppercase;
 }
-
+.div-block-27 button:hover{
+   background-color: #00c66b;
+   color: #fff;
+}
 
 
 
