@@ -23,8 +23,8 @@
     </div>
     <div id="side_panel">
         <div id="cross"><i class="fa-solid fa-xmark"></i></div>
-        <div>
-            <div id="main_content">
+        <div id="right_slider">
+            <div class="main_content">
                 <img src="https://images.typeform.com/images/tyQw2mePFArh/image/default-firstframe.png" alt="">
                 <div id="inner_text">
                     <p id="side_count">1 <i class="fa-solid fa-arrow-right"></i></p>
@@ -32,40 +32,52 @@
                     <div>
                         <input type="text" placeholder="Type your answers here..." id="first_name">
                         <div>
-                            <button>OK <i class="fa-solid fa-check"></i></button>
+                            <button onclick="ok()">OK <i class="fa-solid fa-check"></i></button>
                         </div>
                         <p>press Enter ↵</p>
                     </div>
                 </div>
             </div>
-            <div id="main_content">
+            <div class="main_content">
                 <img src="https://images.typeform.com/images/tyQw2mePFArh/image/default-firstframe.png" alt="">
                 <div id="inner_text">
-                    <p id="side_count">1 <i class="fa-solid fa-arrow-right"></i></p>
-                    <h2>First name</h2>
+                    <p id="side_count">2 <i class="fa-solid fa-arrow-right"></i></p>
+                    <h2>Last name</h2>
                     <div>
-                        <input type="text" placeholder="Type your answers here..." id="first_name">
+                        <input type="text" placeholder="Type your answers here..." id="last_name">
                         <div>
-                            <button>OK <i class="fa-solid fa-check"></i></button>
+                            <button onclick="ok()">OK <i class="fa-solid fa-check"></i></button>
                         </div>
                         <p>press Enter ↵</p>
                     </div>
                 </div>
             </div>
-            <div id="main_content">
+            <div class="main_content" id="sumbit_email">
                 <img src="https://images.typeform.com/images/tyQw2mePFArh/image/default-firstframe.png" alt="">
                 <div id="inner_text">
-                    <p id="side_count">1 <i class="fa-solid fa-arrow-right"></i></p>
-                    <h2>First name</h2>
+                    <p id="side_count">3 <i class="fa-solid fa-arrow-right"></i></p>
+                    <h2>Please type in your Email *</h2>
                     <div>
-                        <input type="text" placeholder="Type your answers here..." id="first_name">
-                        <div>
-                            <button>OK <i class="fa-solid fa-check"></i></button>
-                        </div>
-                        <p>press Enter ↵</p>
+                        <input type="email" placeholder="Type your answers here..." id="email">
+                        <button onclick="submit()">Submit</button>
                     </div>
                 </div>
             </div>
+            <div class="main_content" id="sumbit_email">
+                <div id="inner_text">
+                    <h2>You're all set! See you there!</h2>
+                </div>
+            </div>
+        </div>
+        <div class="action_button">
+            <button class="up_button"><i class="fa-solid fa-angle-up"></i></button>
+            <button class="down_button active"><i class="fa-solid fa-angle-down"></i></button>
+        </div>
+        <div class="powered_by show">
+            <button>Powered by <span>Dev-Mriganka</span></button>
+        </div>
+        <div class="reload_page">
+            <button onclick="reload()">Reload</button>
         </div>
     </div>
     <div id="full_body">
