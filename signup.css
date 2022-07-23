@@ -390,19 +390,12 @@ a {
 }
 
 .side-nav-overlay {
-    display: block;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
     overflow: hidden;
     opacity: 0;
     z-index: 99;
     visibility: hidden;
-    width: 100%;
     height: 100%;
-    background: rgba(22, 22, 22, 0.747);
-    transition: all ease .4s;
+    transition: all ease .1s;
     /* visibility: visible; */
 }
 
@@ -416,4 +409,44 @@ a {
 .side-nav-overlay img{
     opacity: 0.2;
     width: 50px;
+}
+
+.side-nav-overlay {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(22, 22, 22, 0.747);
+    z-index: 99;
+    display: none;
+}
+
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.side-nav-overlay.rotate::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 48%;
+    top: 40%;
+    width: 40px;
+    height: 40px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.699);
+    border-top-color: transparent;
+    border-width: 4px;
+    border-radius: 50%;
+    animation: spin .8s linear infinite;
 }
