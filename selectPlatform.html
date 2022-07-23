@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Content Writing</title>
+    <link rel="stylesheet" href="selectPlatform.css">
+    
+</head>
+
+<body>
+    <div id="selectNavbar">
+        <div><img id="select_img" src="https://app.lately.ai/img/lately_logo_nav_beta.01a45e48.jpg" alt=""></div>
+
+    </div>
+
+    <div id="select_wraper">
+        <h3 id="generate_ai">Once Lately's A.I. generates your social posts, how would you like to publish them? </h3>
+        <p class="select_para"> Select from the below to connect to one of our integrated publishing platforms
+            (Hootsuite or HubSpot Social), or download your social posts to use anywhere you want. </p>
+
+        <div id="select_box">
+            <div class="app_select">
+                <p class="select_para"><b>Publish with Lately</b></p>
+                <img src="https://app.lately.ai/img/lately_logo.53defb01.jpg" alt="" class="app_img" id="image1">
+                <p class="select_para">Publish Lately's A.I.-generated posts right from here. Easy peasy.</p>
+                <button class="select_btn" id="btn1">SELECT</button>
+            </div>
+
+            <div class="app_select">
+                <p class="select_para"><b>Publish with Hootsuite</b></p>
+                <img src="https://app.lately.ai/img/hootsuite-logo.6fb06cd0.png" alt="" class="app_img" id="image2">
+                <p class="select_para">Send Lately's A.I.-generated posts to your Hootsuite account.</p>
+                <button class="select_btn" id="btn2">SELECT</button>
+            </div>
+
+            <div class="app_select">
+                <p class="select_para"><b>Publish with Hubspot</b></p>
+                <img src="https://app.lately.ai/img/hubspot_marketing_hub_logo.17741bc8.png" alt="" class="app_img"
+                    id="image3">
+                <p class="select_para">Send Lately's A.I.-generated posts to your HubSpot Social account.</p>
+                <button class="select_btn" id="btn3">SELECT</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    document.querySelector("#btn1").addEventListener("click", takeImage);
+
+    document.querySelector("#btn2").addEventListener("click", takeImage2);
+
+    document.querySelector("#btn3").addEventListener("click", takeImage3);
+
+    let data = {}
+    function takeImage() {
+        data = {
+            image: document.querySelector("#image1").src
+        }
+        console.log(data)
+        localStorage.setItem("image", JSON.stringify(data))
+    }
+
+    function takeImage2() {
+        data = {
+            image: document.querySelector("#image2").src
+        }
+        console.log(data)
+        localStorage.setItem("image", JSON.stringify(data))
+    }
+
+    function takeImage3() {
+        data = {
+            image: document.querySelector("#image3").src
+        }
+        console.log(data)
+        localStorage.setItem("image", JSON.stringify(data))
+    }
+
+</script>
