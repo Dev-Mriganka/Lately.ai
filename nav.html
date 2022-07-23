@@ -12,6 +12,7 @@
       rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
    <script src="https://kit.fontawesome.com/00b3499e31.js" crossorigin="anonymous"></script>
    <title>Nav</title>
 </head>
@@ -21,7 +22,8 @@
       <p class="max-width-container">This just in: Generate A.I. content for ANY Hootsuite account with Lately. <a
             href="#">Here’s how</a> </p>
    </div>
-   <div class="main-wrapper" >
+   <!--------- navbar for small screen---------- -->
+   <div class="main-wrapper">
       <div class="max-width-container navbar">
          <div id="navleft">
             <div class="navbar-brand">
@@ -282,19 +284,7 @@
       </div>
    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+   <!--------- navbar for big screen---------- -->
    <div class="navigation-full">
       <div class="navigation-container">
          <div class="navigation-left">
@@ -388,28 +378,38 @@
          </nav>
          <br>
          <div class="dropdown-3 w-dropdown">
-            <div class="dropdown-toggle-2 w-dropdown-toggle w--open" id="w-dropdown-toggle-7" role="button">
+            <div class="dropdown-toggle-2 w-dropdown-toggle " id="w-dropdown-toggle-7" role="button">
                <div>Resources <span class="drop-icon">
                      <i class="fa-solid fa-angle-down"></i>
                   </span></div>
             </div>
-            <nav class="dropdown-list-2 w-dropdown-list w--open" id="w-dropdown-list-7">
+            <nav class="dropdown-list-2 w-dropdown-list " id="w-dropdown-list-7">
                <div class="dropdown-list-full-wrapper">
-                  <div class="div-block-20"><a href="#" class="link-block-3 w-inline-block">
-                        <div class="text-block-62">Customer Stories</div>
-                     </a><a href="#" class="link-block-3 w-inline-block">
+                  <div class="div-block-20">
+                     <a href="#" class="link-block-3 w-inline-block">
+                        <div class="text-block-62">Customer Stories
+
+                        </div>
+                     </a>
+                     <a href="#" class="link-block-3 w-inline-block">
                         <div class="text-block-62">Lately Office Hours Sign-Up</div>
-                     </a><a href="#" class="link-block-3 w-inline-block">
+                     </a>
+                     <a href="#" class="link-block-3 w-inline-block">
                         <div class="text-block-62">Lately LIVE&nbsp;Replays</div>
-                     </a><a href="#" class="link-block-3 w-inline-block">
+                     </a>
+                     <a href="#" class="link-block-3 w-inline-block">
                         <div class="text-block-62">How to Position ANYTHING</div>
-                     </a><a href="#" class="link-block-3 w-inline-block">
+                     </a>
+                     <a href="#" class="link-block-3 w-inline-block">
                         <div class="text-block-62">Ebooks</div>
-                     </a><a href="#" class="link-block-3 w-inline-block">
+                     </a>
+                     <a href="#" class="link-block-3 w-inline-block">
                         <div class="text-block-62">Blog</div>
-                     </a><a href="#" class="link-block-3 w-inline-block">
+                     </a>
+                     <a href="#" class="link-block-3 w-inline-block">
                         <div class="text-block-62">Help Center</div>
-                     </a></div>
+                     </a>
+                  </div>
                </div>
             </nav>
          </div>
@@ -445,7 +445,7 @@
       </div>
    </div>
    </div>
-
+   <div id="test"></div>
 </body>
 
 </html>

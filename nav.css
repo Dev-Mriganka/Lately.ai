@@ -9,6 +9,13 @@
    --light-green: #01C66A;
 }
 
+.fixed{
+   position: fixed;
+   width: 100%;
+   top: 0;
+   z-index: 9999999;
+   background-color: #fff;
+}
 a {
    text-decoration: none;
    color: inherit;
@@ -151,7 +158,7 @@ body {
 }
 
 .dropdown-list-3 {
-   display: none;
+   /* display: none; */
    animation: length 1s;
 }
 
@@ -178,6 +185,8 @@ body {
 }
 .main-wrapper {
    display: none;
+   position: sticky;
+   
 }
 
 
@@ -306,6 +315,7 @@ body {
    background: #dddddd;
    display: none;
    min-width: 100%;
+   z-index: 99999;
 }
 
 .w-dropdown:hover .w-dropdown-list {
@@ -419,11 +429,15 @@ body {
    letter-spacing: 0.25px;
 }
 
-
+.w-inline-block {
+   max-width: 100%;
+   display: inline-block;
+}
 
 .div-block-20 {
    position: relative;
-   display: block;
+   display: flex;
+   flex-direction: column;
    max-width: none;
    min-width: auto;
    margin-left: 0px;
@@ -449,9 +463,12 @@ body {
 
 .text-block-62 {
    margin-right: 6px;
-   color: #174c43;
+   color: #175349;
    font-size: 15px;
-   font-weight: 400;
+   font-weight: 500;
+}
+.text-block-62:hover{
+   color: #00c66b;
 }
 
 .text-block-64 {
@@ -487,7 +504,7 @@ body {
    font-size: 15px;
    font-weight: 600;
 }
-.link-19{
+.link-19:hover{
    color: #00c66b;
 }
 
@@ -522,6 +539,17 @@ body {
    color: white;
 }
 
+.w-nav-link {
+   position: relative;
+   display: inline-block;
+   vertical-align: top;
+   text-decoration: none;
+   color: #222222;
+   padding: 20px;
+   text-align: left;
+   margin-left: auto;
+   margin-right: auto;
+}
 .navigation-link {
    display: flex;
    margin-right: 17.203px;
@@ -536,22 +564,21 @@ body {
    text-decoration: none;
 }
 
-.w-nav-link {
-   position: relative;
-   display: inline-block;
-   vertical-align: top;
-   text-decoration: none;
-   color: #222222;
-   padding: 20px;
-   text-align: left;
-   margin-left: auto;
-   margin-right: auto;
-}
 
 .w-nav-link:hover {
    color: #00c66b;
 }
 
+.navigation-link.login {
+   font-family: 'Noto Sans', sans-serif;
+   color: #666;
+   font-weight: 700;
+}
+/* #test{
+   width: 100%;
+   height: 2200px;
+   background-color: #133d36;
+} */
 
 @media all and (min-width: 480px) and (max-width: 991px) {
 
