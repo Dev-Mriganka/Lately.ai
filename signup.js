@@ -23,15 +23,16 @@ function signup() {
    disable.classList.toggle("disable")
 
    // rightSlider.style.top = `-${(sliderLength - 1) * 100}vh`;
-   upButton.addEventListener("click", () => changeSlider("up"));
-   dnButton.addEventListener("click", () => changeSlider("down"));
-
 }
+
+upButton.addEventListener("click", () => changeSlider("up"));
+dnButton.addEventListener("click", () => changeSlider("down"));
+
 function changeSlider(direction) {
-   console.log(direction);
    let sliderHeight = slider.clientHeight
+   console.log(sliderHeight);
    if (direction == "up") {
-      if (activeSliderIndex >= 0) {
+      if (activeSliderIndex > 0) {
          // upButton.classList.add("active");
          activeSliderIndex--
       }
@@ -86,7 +87,7 @@ function close() {
    disable.classList.toggle("disable")
    rightSlider.style.transform = `translateY(0px)`
    document.querySelector(".powered_by").classList.add("show")
-   document.querySelector(".action_button").style.display = "block"
+   // document.querySelector(".action_button").style.display = "block"
    document.querySelector(".reload_page").classList.remove("show")
 }
 
@@ -119,6 +120,7 @@ function submit() {
       }
    }
 }
+
 let validateEmail = (email) => {
    return String(email)
       .toLowerCase()
