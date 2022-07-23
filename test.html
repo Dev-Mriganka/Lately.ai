@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      .grid-2 {
+         position: static;
+         display: grid;
+         max-width: 1060px;
+         margin-right: 0px;
+         margin-left: 0px;
+         justify-items: start;
+         align-items: start;
+         grid-column-gap: 16px;
+         grid-row-gap: 16px;
+         grid-template-areas: "a b c d"
+            "a e f d";
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         grid-template-rows: 50px 200px;
+      }
+      #first_row_grid {
+
+   grid-area: a;
+}
+#second_row_grid {
+   grid-area: b;
+}
+
+#third_row_grid {
+   grid-area: c;
+}
+#forth_row_grid {
+
+   grid-area: d;
+}
+#fifth_row_grid {
+   grid-area: e;
+}
+#sixth_row_grid {
+   grid-area: f;
+}
+   </style>
+</head>
+
+<body>
+   <div class="navigation-drop-container">
+      <div class="w-layout-grid grid-2">
+         <div class="navgrid-div pricing" id="first_row_grid">
+            <div class="bold-text-5">PARTNERS &amp;&nbsp;INTEGRATIONS</div>
+            <div class="text-block-64">Find social media platform integrations and content
+               extensions to
+               enhance your AI content creation experience.<br></div>
+            <div class="menupartners"><a href="#">HubSpot Marketing Hub</a><br></div>
+            <div class="menupartners"><a href="#">Hootsuite</a><br></div>
+            <div class="menupartners"><a href="#">UpContent</a><br></div>
+
+         </div>
+         <div class="navgrid-div" id="second_row_grid">
+            <a href="#" class="link-block-3 mega-header w-inline-block">
+               <div class="text-block-62"><strong class="bold-text-5">AI CONTENT WRITER</strong>
+               </div>
+            </a>
+            <div class="text-block-64">Automatically writes and pre-tests content for your social
+               media
+               programs</div>
+         </div>
+         <div class="navgrid-div" id="third_row_grid">
+            <a href="#" class="link-block-3 mega-header w-inline-block">
+               <div class="text-block-62"><strong class="bold-text-5">SOCIAL MEDIA
+                     MARKETING</strong>
+               </div>
+            </a>
+            <div class="text-block-64">Everything you need to scale your social media marketing
+               program
+            </div>
+         </div>
+         <div class="navgrid-div autogen" id="forth_row_grid ">
+            <a href="#" class="link-block-3 mega-header w-inline-block">
+               <div class="bold-text-5">VIDEO AUTOGENERATOR</div>
+            </a>
+            <div class="text-block-64">Turn your company videos into bite-sized social media video clips and social
+               media
+               posts
+            </div>
+            <div class="div-block-66"><a href="#" class="link-block-3 mega-header w-inline-block">
+                  <div class="text-block-62"><strong class="bold-text-5">PARENT ACCOUNTS</strong></div>
+               </a>
+               <div class="text-block-64">Easily manage parent-child social media accounts</div>
+            </div>
+         </div>
+         <div class="navgrid-div bottom" id="fifth_row_grid">
+            <a href="#" class="link-block-3 mega-header w-inline-block">
+               <div class="text-block-62"><strong class="bold-text-5">SOCIAL ANALYTICS</strong>
+               </div>
+            </a>
+            <div class="text-block-64">Informs your content strategy and make your content more
+               engaging
+               with content analytics </div>
+         </div>
+         <div class="navgrid-div bottom" id="sixth_row_grid">
+            <a href="#" class="link-block-3 mega-header w-inline-block">
+               <div class="text-block-62"><strong class="bold-text-5">SOCIAL SELLING</strong>
+               </div>
+            </a>
+            <div class="text-block-64">Extend your social content across executives, sales,
+               employees,
+               franchises, and more
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>

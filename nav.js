@@ -1,5 +1,5 @@
 let plus = document.querySelectorAll(".menu-link")
-let show = document.querySelectorAll(".w-dropdown-list")
+let show = document.querySelectorAll(".m-w-dropdown-list")
 console.log(plus, show)
 for (let i = 0; i < plus.length; i++) {
    plus[i].addEventListener("click", function () {
