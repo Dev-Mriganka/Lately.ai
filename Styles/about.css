@@ -251,3 +251,22 @@ color:green;
   padding-left: 50px;
   padding-right: 50px; 
 }
+
+@media all and (min-width: 480px) and (max-width: 720px) {
+  #section2 {
+  width: 80%;
+  height: 1100px;
+   /* border: 10px solid red; */
+}
+#section2 > div:first-child {
+  width: 70%;
+  height: 15%;
+}
+
+#how-work {
+  width: 80%;
+  height: 1000px;
+  /* border: 10px solid red; */
+  }  
+  
+}
