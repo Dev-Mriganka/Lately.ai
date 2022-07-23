@@ -1,0 +1,353 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color:  #eef3f3;
+}
+#header{
+    height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    background-color: #ffffff;
+}
+#header > a > img{
+    width: 9%;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+#parent_box{
+    width: 90%;
+    height: 700px;
+    margin: auto;
+    margin-top: 45px;
+}
+#heading_box1 {
+    height: 80px;
+}
+#heading_box1 > h1 {
+    color: #304455;
+    font-size: 32px;
+    font-weight: lighter;
+}
+#heading_box1 > p{
+    color: #304455;
+    padding-top: 10px;
+    font-size: 19.2px;
+    font-weight: lighter;
+}
+#heading_box1 > p >span{
+    color: #304455;
+    font-weight: bold;
+}
+#heading_box2 {
+    margin-top: 40px;
+}
+#heading_box2 > h1{
+    color: #304455;
+    font-size: 24px;
+    font-weight: lighter;
+}
+#heading_box2 > p{
+    color: #304455;
+    padding-top: 10px;
+    font-size: 19.2px;
+    font-weight: lighter;
+}
+#plan_form{
+    width: 100%;
+    margin-top: 30px;
+}
+#cc_container > p{
+    padding-bottom: 10px;
+   font-size: 16px;
+   color: #304455;
+   font-weight: lighter;
+}
+
+#cc_container { 
+    width: 70%;
+    position:relative;
+    padding:0;
+    margin:0;
+}
+#cc_number { 
+    border-radius: 5px;
+    border: 1px solid #304455;
+    background-color: #ffffff;
+    height:40px;
+    width: 100%;
+    margin:0;
+    padding-left:60px;
+}
+#cc_img {
+    position:absolute;
+    bottom:6px;
+    left:10px;
+    width:30px;
+    height:30px;
+}
+#cc_date{
+    position:absolute;
+    top: 39px;
+    left: 85%;
+    width:30px;
+    height:30px;
+    color: #304455;
+}
+#card_holder_details{
+    display: flex;
+    margin-top: 10px;
+    width: 70%;
+}
+#card_holder_details > div {
+    width: 300px;
+}
+#card_holder_details > div > p {
+    padding-bottom: 10px;
+    color: #304455;
+}
+#card_holder_name{
+    width: 93%;
+    height:35px;
+}
+#card_holder_ph{
+    width: 93%;
+    height:35px;
+}
+#coupon_code{
+    width: 100%;
+    height:35px;
+}
+#plane_option{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    height: 60px;
+}
+
+#plan_option_heading{
+    width: 955px;
+    display: flex;
+    justify-content: space-between;
+}
+#plan_option_heading > div > h1{
+    color: #304455;
+    font-size: 24px;
+    font-weight: lighter;
+    padding-top: 15px;
+}
+#plan_option_heading > div > h3{
+    color: #28A745;
+    font-size: 19.2px;
+    font-weight: lighter;
+    padding-top: 15px;
+}
+#planCompnay_img{
+    width: 200px;
+}
+#planCompnay_img > img {
+    padding-top: 10px;
+    width: 200px;
+    height: 40px;
+}
+/* ******************* */
+#plan_details{
+    width: 70%;
+    margin-top: 20px;
+    display: flex;
+}
+#plan_details > div {
+    background-color: #ffffff;
+    border: 1px solid rgb(206, 202, 202);
+    width: 50%;
+}
+#litly_plan > span {
+    font-size: 32px;
+    padding-left: 10px;
+    color: #304455;
+}
+#litly_plan>p,h2{
+    padding-left: 10px;
+    color: #304455;
+    padding-top: 10px;
+    font-weight: lighter;
+}
+#litly_plan > h3{
+    padding-top: 25px;
+    padding-bottom: 10px;
+    color: #304455;
+    font-weight: bolder;
+    padding-left: 10px;
+    font-size: 16px;
+}
+#radio{
+    margin-top: 30px;
+    margin-left: 65%;
+}
+#check_Logo{
+  display: flex;
+  padding-left: 10px;
+  padding-top: 10px;
+  color: #304455;
+  font-weight: lighter;
+}
+#Professionally > p,h3{
+    padding-left: 10px;
+    padding-top: 10px;
+ }
+ #Professionally > h3 {
+     padding-top: 25px;
+     padding-bottom: 10px;
+     color: #304455;
+ }
+ 
+#check_Logo > img {
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+}
+#youtube_logo_link{
+    display: flex;
+    margin-top: 20PX;
+}
+#youtube_logo_link > img {
+    width: 40px;
+    height: 40px;
+    padding-left: 10px;
+
+}
+
+#youtube_logo_link > a:hover{
+    text-decoration: underline;
+}
+#Professionally_plan {
+    margin-left: 30px;
+    height: 500px;
+}
+#span {
+    font-size: 32px;
+    padding-left: 10px;
+    color: #304455;
+}
+#radio2{
+    margin-top: 30px;
+    margin-left: 30%;
+}
+hr{
+    color: rgb(201, 197, 197)
+}
+#marketing_div{
+    height: 250px;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+#marketing_div > div > p{
+    font-size: 16px;
+    color: #304455;
+}
+#marketing_box > img {
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 65%;
+}
+#language_box > img {
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 65%;
+}
+#article_box > img {
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 65%;
+}
+#heading_box3 {
+    height: 50px;
+    font-weight: lighter;
+}
+#heading_box3  > h1{
+    font-weight: lighter;
+    color: #304455;
+}
+#choose_plan_m-y {
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
+#choose_plan_m-y > div {
+    border: 1px solid rgb(206, 202, 202);
+    background-color: #ffffff;
+}
+#permonth_plan > input {  
+    margin-top: 30px;
+    margin-left: 10px;
+}
+#permonth_plan > span{
+    padding-left: 10px;
+    color: #304455;
+}
+#peryear_plan > input{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+#peryear_plan > span {
+    padding-left: 10px;
+    color: #304455;
+}
+#check_box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#submit {
+    background-color: #28A745;
+    border: 0px;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    padding: 5px;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+#help_btn{
+    margin-top: 30px;
+    margin-left: 91%;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #13b562;
+    color: #304455;
+    border-radius: 30px;
+    border: 3px solid #32de84;
+}
+#empty{
+   height: 100px;
+}
+#youtube_logo_link > a {
+    padding-top: 10px;
+    padding-left: 3PX;
+    color: #42B983;
+    font-size: 16px;
+    text-decoration: none;
+}
+.checkbox{
+    color: #304455;
+}
+.pera{
+    color: #304455;
+}
+#plan_form > div > input{
+    background-color: #ffffff;
+}
