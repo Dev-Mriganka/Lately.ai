@@ -106,12 +106,12 @@ function submit() {
       let y = validateEmail(email)
       if (y) {
 
-         setTimeout(() => {
-            changeSlider("last")
-            document.querySelector(".powered_by").classList.remove("show")
-            document.querySelector(".action_button").style.display = "none"
-            document.querySelector(".reload_page").classList.add("show")
-         }, 1000)
+         // setTimeout(() => {
+         //    changeSlider("last")
+         //    document.querySelector(".powered_by").classList.remove("show")
+         //    document.querySelector(".action_button").style.display = "none"
+         //    document.querySelector(".reload_page").classList.add("show")
+         // }, 1000)
       } else {
 
          let but = document.querySelector("#sumbit_email button")

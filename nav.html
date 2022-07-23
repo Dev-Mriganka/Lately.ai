@@ -5,15 +5,17 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="nav.css">
+   <link rel="stylesheet" href="./Styles/nav.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet">
+      
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
    <script src="https://kit.fontawesome.com/00b3499e31.js" crossorigin="anonymous"></script>
+   <!-- JavaScript Bundle with Popper -->
    <title>Nav</title>
 </head>
 
@@ -27,15 +29,15 @@
       <div class="max-width-container navbar">
          <div id="navleft">
             <div class="navbar-brand">
-               <a href="#" id="home" class=""><img
+               <a href="./index.html" id="home" class=""><img
                      src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd8f444e5106349b4570e0b_lately-nav-logo.svg"
                      width="137" alt="" class="logo">
                </a>
-               <div class="menu-mob w-nav-button">
+               <div class="menu-mob w-nav-button" id="button-touch">
                   <i class="fa-solid fa-bars"></i>
                </div>
             </div>
-            <div class="navbar-collapse">
+            <div class="navbar-collapse collapse main-nav-toggle" id="navbar-touch">
                <ul class="navbar-nav">
                   <li>
                      <a href="#" class="menu-link">
@@ -288,7 +290,7 @@
    <div class="navigation-full">
       <div class="navigation-container">
          <div class="navigation-left">
-            <a href="/" id="home" class="brand-2 w-nav-brand" aria-label="home"><img
+            <a href="./index.html" id="home" class="brand-2 w-nav-brand" aria-label="home"><img
                   src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd8f444e5106349b4570e0b_lately-nav-logo.svg"
                   width="137" alt="" class="logo-2"></a>
             <nav role="navigation" class="nav-menu-2 w-nav-menu">
@@ -303,7 +305,7 @@
                      </div>
                   </div>
 
-                  <nav class="dropdown-list-2 megamenu w-dropdown-list" id="w-dropdown-list-5"">
+                  <nav class="dropdown-list-2 megamenu w-dropdown-list" id="w-dropdown-list-5">
                      <div class=" dropdown-list-full-wrapper megamenu">
                      <div class="navigation-drop-container">
                         <div class="w-layout-grid grid-2">
@@ -413,7 +415,6 @@
                </div>
             </nav>
          </div>
-         <br>
          <div class="dropdown-3 w-dropdown">
             <div class="dropdown-toggle-2 w-dropdown-toggle" id="w-dropdown-toggle-8" role="button">
                <div><a href="#" class="link-22">Company <span class="drop-icon">
@@ -436,8 +437,7 @@
                </div>
             </nav>
          </div>
-         <br>
-         <div class="nav-item-no-dropdown"><a href="/pricing/lately-pricing" class="link-19">Pricing</a></div>
+         <div class="nav-item-no-dropdown"><a href="#" class="link-19">Pricing</a></div>
       </div>
       <div class="navigation-right">
          <a href="#" class="demo-button w-button">GET&nbsp;STARTED</a><a href="#"
@@ -449,4 +449,4 @@
 </body>
 
 </html>
-<script src="nav.js"></script>
+<script src="./Scripts/nav.js"></script>
