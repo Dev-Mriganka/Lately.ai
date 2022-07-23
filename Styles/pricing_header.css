@@ -63,19 +63,19 @@
   margin-bottom: 60px;
 }
 .header2 {
-  margin-top: 90px;
+  margin-top: 70px;
   width: 90%;
-  height: 900px;
+  height: 800px;
   /* border: 1px solid red; */
   display: flex;
   margin: auto;
   /* position: absolute; */
 }
 .header2 > div {
-  width: 28%;
+  width: 40%;
   height: 100%;
   /* border: 1px solid black; */
-  margin-left: 85px;
+  margin-left: 27px;
 }
 .subdiv1 {
   height: 45%;
@@ -97,16 +97,30 @@
   margin-bottom: 20px;
 }
 .part1 > a > img {
-  width: 65%;
+  width: 40%;
   margin-right: 2px;
 }
-.subdiv1 h1 {
-  color: black;
-  font-size: 40px;
+.part1>p{
+  /* padding-left: 10px; */
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+    color: #6d6d6d;
+    font-size: 13px;
+    text-align: left;
+}
+.subdiv1 > p:first-child {
+  color: #133d36;
+  font-size: 28px;
+  line-height: 24px;
+  font-weight: 800;
+  text-align: left;
+  /* font-family: "Noto Sans", sans-serif; */
+  padding: 40px 0px 10px 0px;
+
   /* margin-top: 40px; */
 }
-.subdiv1 > h1:first-child:hover {
-  color: green;
+.subdiv1 > p:first-child:hover {
+  color: #00c66b;
 }
 .part2 + p {
   font-size: 18px;
@@ -126,15 +140,18 @@
 .subdiv1 > a > button {
   background-color: #00c66b;
   width: 95%;
-  padding: 18px 0px;
+  padding: 13px 0px;
   color: white;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
   border-radius: 12px;
   border: 1px solid #00c66b;
-  margin-top: 15px;
-  margin-bottom: 20px;
+   margin-top: 15px; 
+  margin-bottom: 20px; 
+  padding-left: 25px;
+  padding-right: 25px;
+  
 }
 .subdiv1 > a > button:hover {
   background-color: white;
@@ -187,22 +204,22 @@
 .second-div > div:first-child {
   background-color: #d7eef2;
 }
-.third-div > div:first-child > h1 + p {
+.third-div > div:first-child >p+ p {
   margin-top: 10px;
   font-size: 40px;
   font-weight: 4px;
   margin-bottom: 15px;
 }
-.third-div > div:first-child > p:nth-child(4) {
+.third-div > div:first-child >p+p+p+p {
   font-size: 18px;
   font-style: italic;
   margin-bottom: 15px;
 }
-.third-div > div:first-child > p:nth-child(5) {
+.third-div .subdiv1>p+p+p {
   color: #133d36;
   font-size: 14px;
   /* font-style: italic; */
-  margin-bottom: 110px;
+  margin-bottom: 70px;
 }
 
 /* Day 3 */
