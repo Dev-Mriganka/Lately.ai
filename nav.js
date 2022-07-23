@@ -15,3 +15,17 @@ for (let i = 0; i < plus.length; i++) {
 document.querySelector(".w-nav-button").addEventListener("click", function (){ 
    document.querySelector(".navbar-collapse").classList.toggle("open")
 })
+
+
+
+var height = $('#top-add').height();
+
+$(window).scroll(function () { 
+   if ($(this).scrollTop() > height) {
+      $('.navigation-full').addClass('fixed')
+      $('.main-wrapper').addClass('fixed')
+   } else { 
+      $('.navigation-full').removeClass('fixed')
+      $('.main-wrapper').addClass('fixed')
+   }
+})
