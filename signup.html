@@ -5,19 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lately Office Hours Sign-up</title>
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="./Styles/signup.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link
         href="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffca620f69d7d0aa2818e70_Lately_Favicon_32px.png"
         rel="shortcut icon" type="image/x-icon">
 </head>
 
 <body>
+    <div id="header"></div>
     <!-- space for navbar -->
     <div class="side-nav-overlay rotate">
     </div>
@@ -198,13 +200,25 @@
                 </div>
             </div>
         </div>
-        <h1 id="try_free">Wanna try Lately for free?</h1>
-        <button id="try_btn">TRY IT FREE</button>
+        <!-- <h1 id="try_free">Wanna try Lately for free?</h1>
+        <button id="try_btn">TRY IT FREE</button> -->
     </div>
 
-
+    <div id="footer"></div>
 </body>
 
 </html>
-<script src="signup.js"></script>
+<script src="./Scripts/signup.js"></script>
 <script src="https://kit.fontawesome.com/00b3499e31.js" crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        $("#header").load("nav.html");
+    });
+    $(function () {
+        $("#footer").load("footer.html");
+    });
+   // $(document).on('click', function () {
+   //       $('.navbar-collapse').removeClass("open");
+   //    });
+//    document.querySelector(".h1-green").innerText = "Wanna try Lately for free?"
+</script>

@@ -4,15 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/customer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link
+        href="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffca620f69d7d0aa2818e70_Lately_Favicon_32px.png"
+        rel="shortcut icon" type="image/x-icon">
     <title>resources/customer-stories</title>
-    <link rel="stylesheet" href="customer.css">
-   
+
 </head>
 
 <body>
-    <div id="cont_customer">
-        <h3 id="h3_custo">CUSTOMER STORIES AND SPOTLIGHTS</h3>
-        <h1 id="h1_custo">We Love Our Customers 💚</h1>
+    <div id="header"></div>
+    <div id="green_box">
+        <div id="content_box">
+            <div>
+                <h3 id="h3_custo">CUSTOMER STORIES AND SPOTLIGHTS</h3>
+                <h1 id="h1_custo">We Love Our Customers 💚</h1>
+            </div>
+        </div>
+
     </div>
     <div id="custo_box">
         <div class="box_sto">
@@ -130,12 +147,24 @@
         </div>
     </div>
 
-    <div id="bottom_cont">
+    <!-- <div id="bottom_cont">
         <div>
             <h1 id="ready_start">Ready to start generating more effective social posts with AI?</h1>
         </div>
         <button id="bottom_btn">TRY IT FREE</button>
-    </div>
+    </div> -->
+    <div id="footer"></div>
 </body>
 
 </html>
+<script>
+    $(function () {
+        $("#header").load("nav.html");
+    });
+    $(function () {
+        $("#footer").load("footer.html");
+    });
+   // $(document).on('click', function () {
+   //       $('.navbar-collapse').removeClass("open");
+   //    });
+</script>

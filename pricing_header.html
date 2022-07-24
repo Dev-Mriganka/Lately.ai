@@ -3,10 +3,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      
+      <link
+        href="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffca620f69d7d0aa2818e70_Lately_Favicon_32px.png"
+        rel="shortcut icon" type="image/x-icon">
     <title>Document</title>
-    <link rel="stylesheet" href="../Styles/pricing_header.css" />
+    <link rel="stylesheet" href="./Styles/pricing_header.css" />
   </head>
   <body>
+    <div id="header"></div>
     <div class="header">
       <div class="header1">
         <h1>Lately Pricing & Plans</h1>
@@ -21,7 +33,7 @@
             <span class="toggle_btn"></span>
           </div>
           <p>Monthly<p>
-          <script src="../Scripts/toggle.js"></script>
+          
         </div>
         <p>Save up to 30%!</p>
       </div>
@@ -755,5 +767,18 @@
         </div>
     </div>
     </div>
+    <!-- <div id="footer"></div> -->
   </body>
 </html>
+<script src="./Scripts/toggle.js"></script>
+<script>
+  $(function () {
+    $("#header").load("nav.html");
+  });
+  $(function () {
+    $("#footer").load("footer.html");
+  });
+   // $(document).on('click', function () {
+   //       $('.navbar-collapse').removeClass("open");
+   //    });
+</script>

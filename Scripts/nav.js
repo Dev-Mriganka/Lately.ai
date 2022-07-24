@@ -29,7 +29,7 @@ $(window).scroll(function () {
       $('.main-wrapper').addClass('fixed')
    } else {
       $('.navigation-full').removeClass('fixed')
-      $('.main-wrapper').addClass('fixed')
+      $('.main-wrapper').removeClass('fixed')
    }
 })
 

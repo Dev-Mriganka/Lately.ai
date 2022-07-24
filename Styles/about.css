@@ -71,7 +71,13 @@
   font-family: "Noto Sans", sans-serif;
   font-size: 17px;
 }
-p {
+#section1 p,
+#section2 p,
+#how-work p,
+#vision-section p,
+#contact-us p,
+#lssection p {
+
   color: #5f5f5f;
   line-height: 24px;
   display: block;
