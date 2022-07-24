@@ -107,6 +107,14 @@ let submitForm = () => {
             arr.push(u1)
             alert("SignUp Successfully!")
             localStorage.setItem("users", JSON.stringify(arr));
+            // to null the input tag after submititon
+            document.querySelector("#first_name").value=null;
+            document.querySelector("#last_name").value=null;
+            document.querySelector("#email").value=null;
+            document.querySelector("#email").value=null;
+            document.querySelector("#password1").value=null;
+            document.querySelector("#password2").value=null;
+            document.querySelector('input[type="checkbox"]:checked').value = null;
          }
          else {
             alert("User already Exits!")
