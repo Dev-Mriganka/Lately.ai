@@ -41,7 +41,7 @@ let loginForm = ()=>{
         alert("login successfully");
         document.getElementById("password").innerHTML = null;
         document.getElementById("email").innerHTML = null;
-        window.location.href="index.html"
+        window.location.href="selectPlatform.html"
      }
      else if(flag2==true){
         alert("Wrong Password!")
