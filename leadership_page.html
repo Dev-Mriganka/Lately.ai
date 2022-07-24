@@ -1,148 +1,197 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <link
-        href="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffca620f69d7d0aa2818e70_Lately_Favicon_32px.png"
-        rel="shortcut icon" type="image/x-icon">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
     <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
+        *{
+        font-family: 'Montserrat', sans-serif,'Noto Sans', sans-serif;
         }
-
-        #leadbg {
+        #leadbg{
             background-color: #e8f8f2;
         }
-
-        #leaders img {
-            height: 200px;
-            width: 200px;
+        #leaders img{
+            height:200px;
+            width:200px;
             border-radius: 100%;
         }
-
-        #leaders {
-            width: 70%;
+        #leaders{
+            width:70%;
             /* border: 1px solid red; */
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
+            grid-template-columns: repeat(3,1fr);
+            gap:20px;
             grid-template-rows: auto;
             margin: auto;
-            padding: 100px;
-
+            padding:100px;
+           
         }
-
-        #leaders>div {
-            width: auto;
+        #leaders>div{
+            width:auto;
             /* border:1px solid black; */
             text-align: center;
         }
-
-        #leaders div div {
+        #leaders div div{
             color: #00C66b;
             font-weight: bold;
         }
-
-        #quote {
-            height: 85px;
-            width: 85px;
+        #quote{
+            height:85px;
+            width:85px;
             margin-left: 140px;
-            margin-top: -45px;
-
+            margin-top:-45px;
+           
         }
-
-        #Our-team {
-            background-color: #174C43;
-            margin-top: -45px;
-
+        #Our-team{
+            background-color:#174C43;
+           margin-top: -45px;
+            
         }
-
-        #Our-team h1 {
+        #Our-team h1{
             color: #00C66b;
             margin-left: 200px;
-            padding-top: 40px;
+           padding-top: 40px;
         }
-
-        #info {
+        #info{
             font-size: 24px;
-            color: white;
-            width: 70%;
+            color:white;
+            width:70%;
             margin-left: 200px;
         }
-
-        #finalbg {
+        #finalbg{
             background-color: #174C43;
         }
-
-        #final {
+        #final{
             display: flex;
             padding-top: 50px;
             justify-content: center;
             align-items: center;
         }
-
-        #final img:last-child {
-            height: 49px;
-            width: 139px;
+        #final img:last-child{
+            height:49px;
+            width:139px;
             margin-left: 300px;
-
+            
         }
-
-        #final img:first-child {
+        #final img:first-child{
             border-radius: 100%;
-            height: 120px;
-            width: 120px;
+            height:120px;
+            width:120px;
         }
-
-        #name div:first-child {
+        #name div:first-child{
             color: white;
             font-size: 20px;
             display: block;
         }
-
-        #name div:last-child {
+        #name div:last-child{
             font-size: 14px;
-            color: white;
+            color:white;
         }
-
-        #teambg {
+        #teambg{
             background-color: #174C43;
-            height: 200px;
+            height:200px;
         }
-
-        #team {
+        #team{
             text-align: center;
             padding-top: 50px;
         }
-
-        #team strong {
-            color: white;
+        #team strong{
+            color:white;
             font-size: 44px;
-
+           
         }
-
-        #team p {
-            color: white;
+        #team p{
+            color:white;
             font-size: 20px;
         }
+        @media all and (min-width:320px) and (max-width:768px){
+            #leaders{
+                width:50%;
+                /* border: 1px solid red; */
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap:20px;
+                grid-template-rows: auto;
+                margin: auto;
+                margin-right: 250px;
+                padding:0px;
+            
+            }
+            #leaders>div{
+                margin-left: 0px;
+
+            }
+            #teambg{
+                background-color: #174C43;
+                height:auto;
+                padding-bottom: 50px;
+            }
+            #team{
+                text-align: center;
+                padding-top: 50px;
+            }
+            #team strong{
+                color:white;
+                font-size: 44px;
+            
+            }
+            #team p{
+                color:white;
+                font-size: 20px;
+                width: 300px;
+                text-align: center;
+                margin-left: 150px;
+            }
+            #finalbg{
+                background-color: #174C43;
+            }
+            #final{
+                display: flex;
+                flex-direction: column;
+                padding-top: 50px;
+                justify-content: center;
+                align-items: center;
+            }
+            #final img:last-child{
+                height:49px;
+                width:139px;
+                /* margin-left: 300px; */
+                margin-right: 300px;
+                
+            }
+            #final img:first-child{
+                border-radius: 100%;
+                height:120px;
+                width:120px;
+            }
+            #Our-team{
+                background-color:#174C43;
+                margin-top: -45px;
+                    
+            }
+            #Our-team h1{
+                color: #00C66b;
+                margin-left: 200px;
+                padding-top: 40px;
+            }
+            #info{
+                font-size: 20px;
+                color:white;
+                width:50%;
+                margin-left: 200px;
+            }
+        }
+
     </style>
 </head>
-
 <body>
-    <div id="header"></div>
     <div id="teambg">
         <div id="team">
             <strong>Team Lately</strong>
@@ -152,155 +201,108 @@
     <div id="leadbg">
         <div id="leaders">
             <div>
-                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffca99db00c4ef50875b7e5_Kate.jpg"
-                    alt="">
+                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffca99db00c4ef50875b7e5_Kate.jpg" alt="">
                 <h3>Kate Chernis Bradley</h3>
                 <div>Cofounder & CEO</div>
-                <p>A.I.-powered content creation pioneer. Former marketing agency owner with a whole lotta spreadsheets.
-                    Ex-XM rock 'n' roll dj. Copywriting savant.</p>
-
+                <p>A.I.-powered content creation pioneer. Former marketing agency owner with a whole lotta spreadsheets. Ex-XM rock 'n' roll dj. Copywriting savant.</p>
+    
             </div>
             <div>
-                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffca99ec386c51d19f51306_Lauren-p-500.jpeg"
-                    alt="">
+                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffca99ec386c51d19f51306_Lauren-p-500.jpeg" alt="">
                 <h3>Lauren Turow</h3>
                 <div>Head of Growth Operations</div>
-                <p>Sales and customer success lead. Masters in psychology. Expert tie-dye artist. French pastry baking
-                    queen. Shares a brain with Kate.</p>
+                <p>Sales and customer success lead. Masters in psychology. Expert tie-dye artist. French pastry baking queen. Shares a brain with Kate.</p>
             </div>
             <div>
-                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6012e4869863c372d7ccf76b_jason2-p-500.jpeg"
-                    alt="">
+                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6012e4869863c372d7ccf76b_jason2-p-500.jpeg" alt="">
                 <h3>Jason DeBacco</h3>
                 <div>Cofounder & CPO</div>
-                <p>Graphic and UX designer, specializing in scalable, customer-facing platforms for badass global brands
-                    you’ve def heard of. Dachshund enthusiast. </p>
+                <p>Graphic and UX designer, specializing in scalable, customer-facing platforms for badass global brands you’ve def heard of. Dachshund enthusiast. </p>
             </div>
             <div>
-                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffca99d387ffcef80d8a887_Brian.jpg"
-                    alt="">
+                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffca99d387ffcef80d8a887_Brian.jpg" alt="">
                 <h3>Brian Sirkia</h3>
                 <div>Cofounder & CTO</div>
-                <p>Serial entrepreneur. Full-stack engineer. Calm in the storm. Kate’s fave guy to have a beer with
-                    EVER. Plus his cat is named Bruce.</p>
+                <p>Serial entrepreneur. Full-stack engineer. Calm in the storm. Kate’s fave guy to have a beer with EVER. Plus his cat is named Bruce.</p>
             </div>
             <div>
-                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6011aea32d36cd40181fcc06_ab-p-500.jpeg"
-                    alt="">
+                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6011aea32d36cd40181fcc06_ab-p-500.jpeg" alt="">
                 <h3>Kristen Shedd</h3>
                 <div>Customer Success Manager</div>
-                <p>Seasoned customer service ninja. Problem solver. Sales, retention, community building. Downhill
-                    skiing doyenne. Infectious laugh.</p>
+                <p>Seasoned customer service ninja. Problem solver. Sales, retention, community building. Downhill skiing doyenne. Infectious laugh.</p>
             </div>
             <div>
-                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/602c0a9825089663e017a552_1517478331461.jpeg"
-                    alt="">
+                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/602c0a9825089663e017a552_1517478331461.jpeg" alt="">
                 <h3>David Merman Scott</h3>
                 <div>Strategic Marketing Advisor</div>
-                <p>Marketing humdinger. Joyful insouciant. The New Rules of Marketing and PR author (yep, THAT guy).
-                    Grateful Dead superfan.</p>
+                <p>Marketing humdinger. Joyful insouciant. The New Rules of Marketing and PR author (yep, THAT guy). Grateful Dead superfan.</p>
             </div>
             <div>
-                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/60770daa16b5a86d9e6bce9f_EMMASERENY.jpg"
-                    alt="">
+                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/60770daa16b5a86d9e6bce9f_EMMASERENY.jpg" alt="">
                 <h3>Emma Sereny-Johnson</h3>
                 <div>PR Associate</div>
-                <p>Organizing whiz. Former TV actor. Competitive horseback rider (yes, a sport; ever been tossed off a
-                    horse?). Digs Stones, Steve Martin, and gin.</p>
+                <p>Organizing whiz. Former TV actor. Competitive horseback rider (yes, a sport; ever been tossed off a horse?). Digs Stones, Steve Martin, and gin.</p>
             </div>
             <div>
-                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffca99d4d6317835171469b_Greg.jpg"
-                    alt="">
+                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffca99d4d6317835171469b_Greg.jpg" alt="">
                 <h3>Greg Hamel</h3>
                 <div>VP of Engineering</div>
                 <p>VP of Engineering
-                    Full-stack engineer and former CTO. Backend architecture, development and implementation. Sanity
-                    keeper. Hero. Heavy metal drummer.</p>
+                    Full-stack engineer and former CTO. Backend architecture, development and implementation. Sanity keeper. Hero. Heavy metal drummer.</p>
             </div>
             <div>
-                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/60770e05dc54d3677803fe1a_gary.jpeg"
-                    alt="">
+                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/60770e05dc54d3677803fe1a_gary.jpeg" alt="">
                 <h3>Gary Vaynerchuk</h3>
                 <div>Entrepreneurial Advisor</div>
-                <p>Marketing mystic. Chairman of VaynerX. CEO of VaynerMedia. 5-Time NYT Bestselling Author. Looooooves
-                    wine.</p>
+                <p>Marketing mystic. Chairman of VaynerX. CEO of VaynerMedia. 5-Time NYT Bestselling Author. Looooooves wine.</p>
             </div>
             <div>
-                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6012b32371fbb12bd4c5ad68_breault.png"
-                    alt="">
+                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6012b32371fbb12bd4c5ad68_breault.png" alt="">
                 <h3>Chris Breault</h3>
                 <div>Customer Experience Account Executive</div>
-                <p>Award-winning music curator and rock ‘n’ roll podcast host. Soccer beast. Craft beer aficionado. Kate
-                    and Chris go waaaaay back.</p>
+                <p>Award-winning music curator and rock ‘n’ roll podcast host. Soccer beast. Craft beer aficionado. Kate and Chris go waaaaay back.</p>
             </div>
             <div>
-                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/600a12640a4a1b435f05fd28_T048XPPQD-U9MSWP49L-e924321d2fe5-512-p-500.png"
-                    alt="">
+                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/600a12640a4a1b435f05fd28_T048XPPQD-U9MSWP49L-e924321d2fe5-512-p-500.png" alt="">
                 <h3>Cadi Jordan</h3>
                 <div>Social Media Engagement Lead</div>
-                <p>Connectorpreneur. Marketing and social media strategist. Social selling lead-generation. Empath. Fave
-                    game: Two Truths and a Lie.</p>
+                <p>Connectorpreneur. Marketing and social media strategist. Social selling lead-generation. Empath. Fave game: Two Truths and a Lie.</p>
             </div>
             <div>
-                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6012eb6878bc1c3a4b4c4f16_kaigui2.png"
-                    alt="">
+                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6012eb6878bc1c3a4b4c4f16_kaigui2.png" alt="">
                 <h3>Dr. Kaigui Bian</h3>
                 <div>AI Lead</div>
-                <p>Network Computing Assoc. Professor/Director. Computer Science Asst. Chair, EECS Peking University.
-                    Obvi smarter than the rest of us</p>
+                <p>Network Computing Assoc. Professor/Director. Computer Science Asst. Chair, EECS Peking University. Obvi smarter than the rest of us</p>
             </div>
             <div>
-                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6011aea1b737499f777f78aa_aa.jpeg"
-                    alt="">
+                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6011aea1b737499f777f78aa_aa.jpeg" alt="">
                 <h3>Alex Wieser</h3>
                 <div>Social Media Advisor</div>
-                <p>Copywriting whippersnapper. Digital marketing persona development. Longest serving employee! Her King
-                    Charles Cavalier is supah-cute</p>
+                <p>Copywriting whippersnapper. Digital marketing persona development. Longest serving employee! Her King Charles Cavalier is supah-cute</p>
             </div>
             <div>
-                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6011aea3a7a22a3948ad971a_ae-p-500.jpeg"
-                    alt="">
+                <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6011aea3a7a22a3948ad971a_ae-p-500.jpeg" alt="">
                 <h3>Judy Loehr</h3>
                 <div>Product & Partnerships Advisor</div>
-                <p>SaaS tech veteran (Salesforce + a loooong list of others). Early product build and GTM specialist.
-                    VC. Champion of rad female founders.</p>
+                <p>SaaS tech veteran (Salesforce + a loooong list of others). Early product build and GTM specialist. VC. Champion of rad female founders.</p>
             </div>
         </div>
     </div>
-    <img id="quote"
-        src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd7b374b200124961cb94ac_home-quote-icon.png"
-        alt="">
+    <img id="quote" src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd7b374b200124961cb94ac_home-quote-icon.png" alt="">
     <div id="Our-team">
         <h1>Your team is our team.</h1>
-        <div id="info">“The experience we’ve had working with the people at Lately is second-to-none. I hesitate to use
-            the term “customer service,” because they feel more like business partners to us. We truly feel like they
-            are invested in our organization’s success.”</div>
+        <div id="info">“The experience we’ve had working with the people at Lately is second-to-none. I hesitate to use the term “customer service,” because they feel more like business partners to us. We truly feel like they are invested in our organization’s success.”</div>
     </div>
     <div id="finalbg">
         <div id="final">
-            <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/600102959735541a6e7ce0ef_1575256461580-p-500.jpeg"
-                alt="">
+            <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/600102959735541a6e7ce0ef_1575256461580-p-500.jpeg" alt="">
             <div id="name">
                 <div>Chris Raftery</div>
                 <div>Director of Marketing, SCM Connections</div>
             </div>
-
-            <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffcd14c0ef5edbdaabdacd0_SCM_white.png"
-                alt="">
+            
+            <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffcd14c0ef5edbdaabdacd0_SCM_white.png" alt="">
         </div>
     </div>
-    <div id="footer"></div>
 </body>
-
 </html>
-<script>
-    $(function () {
-        $("#header").load("nav.html");
-    });
-    $(function () {
-        $("#footer").load("footer.html");
-    });
-   // $(document).on('click', function () {
-   //       $('.navbar-collapse').removeClass("open");
-   //    });
-</script>
