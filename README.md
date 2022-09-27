@@ -1,75 +1,62 @@
-# wiggly-railway-667
-Unit-3 project - https://app.lately.ai/
+# Lately - https://lately.netlify.app/
 
 
-- 🔭 Mriganka Mondal -> **Entire Landing Page**
-
-- 🌱 Najrin Rashid Shah -> **Pricing Page + About**
-
-- 💬 Deepak Kumar -> **Sign Up page + Help Center**
-
-- 📫 Tushar Tyagi -> **Log In + Register + Payment**
-
-- 👑 Sateesh Vepada -> **Product Page + Customer**
-
-- ⚡ Anubhav Varshney -> **Manager**
-
--Vision
-
-Lately helps humans write better marketing content in collaboration with artificial intelligence and software automation. (That collaboration part is key, btw. And is the basis of everything we do.)
-
-Leading by example is core to our product and our belief. We walk the talk. And we do it, together.
-
-Because Lately is a community. We see ourselves as an extension of our customers' marketing teams and we prioritize relatability and listening so they see us as not AI-powered software but as humans. We actively try to get to know each and every one of them and make ourselves available for them to get to know us.
-
-Most importantly, we emphasize these beliefs internally, as well. Authenticity through honesty, collaboration, productive dialogue and a genuine desire to solve problems together is our lifeblood. As we are a community to our customers, we are also a community to ourselves; we recognize the magnitude of the journey we're on and rely upon each other to both acknowledge successes and work through challenges.
-
-Together, in partnership with our customers, we’re growing Lately into a new evolution of AI-content creation software that humans truly love. 
-
--Here’s how it works:
-Lately helps humans write better marketing content in collaboration with artificial intelligence and software automation. (That collaboration part is key, btw. And is the basis of everything we do.)
-
-1.Each time your brain hears a new song, it automatically accesses every song you’ve ever heard before.
+<img align="right" alt="Coding" width="400" src="https://github.com/Dev-Mriganka/Lately.ai/blob/main/images/lately.jpg">
 
 
-2.Your brain then looks for familiar touch points in order to index that new song in your memory banks.
+## Description 
 
 
-3.Every voice has a frequency, like a musical note. When you read text, you hear that voice inside your head.
+- Lately helps humans write better marketing content in collaboration with artificial intelligence and software automation.
+- Lately’s artificial intelligence studies what your social media audience wants to watch, hear or read and then builds you a custom writing model, based on what it learns.
+- Learned how to implement html css and js combination.
+
+### Tech Stack
 
 
-4.Like a rock ‘n’ roll dj, it’s the writer's job to give you familiar touch points in order to sell you something new.
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
 
+## Features 
 
-5.Lately’s AI studies familiar touch points in order to create a writing model and then applies this writing model to transform longform content into something new.
-
-we made user friendly UI so that user can get best experience 
-
-
-1.Sign up
-
-  user can sign in our website by giving small details like- name, email id etc.
+#### 1. User can sign in our website by giving small details like- name, email id etc.
   
   
-2.Login
-
-
-  then user can login by filling the credentials whatever he or she given during sign up. then user will be authenticated by or website. after the authentification       user can enjoy or services.
+#### 2. User can login by filling the credentials whatever he or she given during sign up. then user will be authenticated by or website. after the authentification       user can enjoy or services.
   
-  
-3.After the login user can see the all types of services provided by us so the user can choose services by their choices.
+#### 3. After the login user can see the all types of services provided by us so the user can choose services by their choices.
+
+#### 4. User can also see the customer stories about our services in the Resource section , in this section user also can see the Blogs of the some renowned persons experiences .
+
+#### 5. In the product page user can see the all kinds of services provided by us in our website.
+
+#### 6. In the pricing section user can choose services by monthly and annual basis according to the pocket size.
+
+#### 7. Then user can do the payment in payment page. where we are providing multiple option for payment so that user can get our services in very easy way.
 
 
-4.User can also see the customer stories about our services in the Resource section , in this section user also can see the Blogs of the some renowned persons experiences .
+### Team 
+
+- Mriganka Mondal   [@dev-mriganka](https://www.github.com/Dev-Mriganka)  -> **Entire Landing Page**
+- Tushar Tyagi      [@Tushar9546]( https://github.com/Tushar9546)  -> **Log In + Register + Payment**
+- Deepak Kumar  [@11-DEEPAK-KUMAR-11](https://github.com/11-DEEPAK-KUMAR-11)  -> **Sign Up page + Help Center**                                             
+- Najrin Rashid Shah  [@snaaz123]( https://github.com/snaaz123)  -> **Pricing Page + About**
+- Sateesh Vepada  [@vepada-sateesh]( https://github.com/vepada-sateesh)  -> **Product Page + Customer**
+
+### Lessons Learned
+
+- Gain excessive knowledge on application of HTML , CSS & JS .
+- Got to know how to collabrate with team members.
+- Enjoyed the process of learning and creating the product.
 
 
-5.In the product page user can see the all kinds of services provided by us in our website.
+### Screenshots
+<img align="left" alt="Coding" width="550" src="https://github.com/Dev-Mriganka/Lately.ai/blob/main/images/laptop.png">
+<img align="left" alt="Coding" width="250" src="https://github.com/Dev-Mriganka/Lately.ai/blob/main/images/lately-tab.png">
+<img align="left" alt="Coding" width="150" src="https://github.com/Dev-Mriganka/Lately.ai/blob/main/images/mobile.png">
 
-
-6.In the pricing section user can choose services by monthly and annual basis according to the pocket size.
-
-
-7.Then user can do the payment in payment page. where we are providing multiple option for payment so that user can get our services in very easy way.
 
 
                                             ! THANKYOU, WE WILL BE HAPPY TO HEAR YOU !
